@@ -75,6 +75,76 @@
 
 }
 
+.goods-sort {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 36px 0;
+    font-size: 16px;
+    > span{
+        margin-right: 14px;
+        display: block;
+    }
+    .jq-selectbox__select {
+        height: 40px;
+        width: 256px;
+        padding: 0 45px 0 12px;
+        border: 1px solid #CCC;
+        background: linear-gradient(169.38deg, #F8F8F8 0%, #F1F1F1 92.42%);
+        border: 1px solid $border-gray;
+        box-sizing: border-box;
+        @include border-radius(3px);
+        box-shadow: none;
+        color: $title;
+        font: 16px/40px $font;
+        text-shadow: none;
+        .jq-selectbox__trigger {
+            height: 100%;
+            border-left: none;
+            .jq-selectbox__trigger-arrow {
+                background: url(../img/icons/drop-down-arrow.svg) no-repeat center center;
+                top: 0;
+                right: 12px;
+                width: 16px;
+                height: 100%;
+                border: none;
+            }
+        }
+    }
+    .jq-selectbox__dropdown {
+        box-sizing: border-box;
+        margin: 0;
+        background: linear-gradient(134.51deg, #EAEAEA 0%, #F2F2F2 92.42%);
+        border: 1px solid $border-gray;
+        box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.12);
+        @include border-radius(3px);     
+        box-shadow: none;
+        font: 16px/40px $font;
+    }
+    .jq-selectbox ul {
+        padding: 10px 0;
+    }
+    .jq-selectbox li{
+        padding: 0 12px;
+        &.selected{
+            background-color: $border-gray;
+            color: $title;
+        }
+        &:hover {
+            background-color: $border-gray;
+            color: $title;
+        }
+    }
+    .jq-selectbox{
+        &.opened {
+            box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.12);
+            .jq-selectbox__dropdown {
+                box-shadow: -5px 8px 8px rgba(0, 0, 0, 0.12);
+            }
+        }
+    }
+}
+
 .goods-card {
     width: 100%;
     background-color: $wh;
@@ -198,19 +268,22 @@
     }
 }
 
+.line {
+    border-top: 1px solid $goods-card-gray;
+    width: 100%;
+    margin: 14px 0;
+    &:last-of-type {
+        margin-bottom: 54px;
+    }
+}
+
 .shop-info {
-    height: 105px;
+    height: 120px;
     overflow-y: scroll;
     width: 100%;
     color: $grey;
     line-height: 30px;
-    margin-bottom: 54px;
     position: relative;
-    &::after {
-        content: '';
-        border-top: 1px solid $goods-card-gray;
-        width: 100%;
-    }
     > p {
         margin: 0;
     }

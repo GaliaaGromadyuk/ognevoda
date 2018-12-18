@@ -143,4 +143,7 @@ function checkParams() {
     } else {
         $('.rozrah-price-popup #submit').css('display', 'none');
     }
+
 }
+
+$('select').styler();
