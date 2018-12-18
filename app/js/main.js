@@ -13,6 +13,19 @@ jQuery(document).ready(function($) {
 	$('.whywe-block').mouseleave(function() {
 		$(this).children(".whywe-block__img").css('opacity', '1');
 	});
+  var headerMenu = $('.menu-humburger');
+  $('body').on('click', '.menu-humburger', function(){
+    $(this).toggleClass('open');
+    $('.header .header__menu').slideToggle();  
+    if (headerMenu.hasClass('open')) {
+        $('.header-logo svg path:last-child').css('fill', 'white');
+    } else{
+      $('.header-logo svg path:last-child').css('fill', '#E51010');
+    }
+  });
+
+
+
 });
 
 $('.slider').slick({

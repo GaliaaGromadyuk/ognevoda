@@ -18,7 +18,7 @@
 
 }
 
-@media (max-width : 769px)   {
+@media (max-width : 767px)   {
 	html{
 		font-size: 15px;
 	}
@@ -32,17 +32,70 @@
 		margin-bottom: 2rem;
 	}
 	.header {
+		padding: 0;
 		.header-phone{
 			display: none;
 		}
 		.main_menu{
-			display: none;
+			flex-direction: column;
 		}
 		.language{
 			display: none;
+			&-mobile{
+			    margin-top: 3rem;
+			    display: flex;
+			    flex-direction: row;
+			    .language__list{
+			    	    margin: 0 auto;
+			    }
+			    .language__list:after{
+			    	display: none;
+			    }
+			   ul li{
+			    	padding: 1rem 3.6rem;
+			    	border: 1px solid $title;
+			    	border-radius: 20px;
+			    	box-shadow: none;
+			    	a{
+			    		color: $title;
+			    		font-weight: 700;
+			    	}
+			    }
+			    ul li.current{
+		    		border: 1px solid $wh;
+		    		background: $wh;
+		    		box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25);
+		    		a{
+		    			color: $main;
+		    		}
+		    	}
+			}
 		}
 		.header-logo img{
 			min-width: 6rem;
+		}
+		.header__menu{
+			position: fixed;
+			display: none;
+		    top: 0;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    z-index: -1;
+		    text-align: center;
+		    background: $main;
+		    width: 100%;
+		    padding: 5rem 0;
+		    li a{
+		    	color: $wh;
+		    }
+		    li.current-menu-item a{
+				color: $title;
+		    }
+		    li{
+		    	padding: 1rem 0;
+			    font-size: 1.35rem;
+		    }
 		}
 	}
 	.home{
@@ -161,6 +214,10 @@
 		    margin-bottom: 2rem;
 		}
 		.feedback{
+			margin-bottom: 2rem;
+			.slider-arrow{
+				display: none !important;
+			}
 			&-right{
 				padding: 1rem;
 			}
@@ -182,6 +239,13 @@
 	.home-sale__btn{
 		width: 7rem;
 		height: 3rem;
+	}
+	.footer{
+		text-align: center;
+		&__social ul{
+			    margin: 0 auto;
+			    margin-top: 1rem;
+		}
 	}
 }
 

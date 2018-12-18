@@ -1,0 +1,148 @@
+// BLOG
+
+.blog{
+	.sidebar{
+		&-title{
+			font-family: $font-title;
+			color: $main;
+			font-weight: 700;
+			margin-top: 0;
+		    padding-bottom: 1rem;
+		}
+		&-navigation{
+			background: $wh;
+			padding: 2.55rem 1.7rem;
+			ul li{
+				margin: 1.5rem 0;
+			}
+			a:hover{
+				color: $main;
+			}
+		}
+		&-menu{
+	    	padding-bottom: 1rem;
+	    	border-bottom: 1px solid #E5E5E5;
+	    }
+		.search{
+			&-input{
+				display: flex;
+			    position: relative;
+			    input{
+			    	margin: 0;
+			    }
+			}
+			&-btn{
+		    	position: absolute;
+			    right: 0;
+			    top: 0;
+			    bottom: 0;
+			    background: none;
+			    border: 0;
+		        display: flex;
+			    align-items: center;
+			    justify-content: center;
+			    padding: 0 1.5rem;
+			    cursor: pointer;
+			    svg{
+			    	transition: all 0.2s;
+			    }
+			    &:hover svg{
+			    	fill: $title;
+			    }
+			    &:focus {
+				    outline: none;
+				}
+				svg{
+					fill: $main;
+				}
+		    }
+		    &__block{
+		    	margin-top: 2rem;
+		    }
+		}
+		&-social{
+			padding: 2.55rem 1.7rem;
+			background: $wh;
+			a{
+				color: #8C8787;
+				border: 2px solid #8C8787;
+				padding: 0.5rem 0;
+				min-width: 8.5rem;
+				font-size: 0.8333rem;
+				box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25);
+				background: none;
+			}
+			&__digit{
+				text-align: center;
+			}
+			&__amount{
+				font-size: 2.222rem;
+				color: $title;
+				font-weight: 500;
+				font-family: $font-title;
+				margin: 0;
+			}
+			&__block{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem 0;
+			    border-top: 1px solid #E5E5E5;
+			    border-bottom: 1px solid #E5E5E5;
+			}
+
+		}
+		&-popup{
+			background: linear-gradient(93.09deg, #E51010 38.25%, #880707 105.98%);
+			padding: 2.25rem 4.9rem;
+			text-align: center;
+			margin-top: 1rem;
+			margin-bottom: 2rem;
+			p{
+				font-size: 1.1111rem;
+				text-transform: uppercase;
+				color: $wh;
+				font-weight: 700;
+			}
+		}
+	}
+	&-article{
+		&__block{
+			background: $wh;
+			box-shadow: -5px 5px 18px rgba(0, 0, 0, 0.07);
+			margin-bottom: 1.65rem;
+		}
+		&__name a{
+			margin-top: 0;
+			color: $title;
+			&:hover{
+				color: $main;
+			}
+		}
+		&__img{
+			height: 12.5rem;
+			display: block;
+		}
+		&__content{
+			padding: 2.55rem 1.7rem;
+		}
+		&__description{
+			margin-bottom: 2.75rem;
+		}
+		&__footer{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			svg{
+				fill: #E5E5E5;
+				transition: all 0.2s;
+				&:hover{
+					fill: #E51010;
+				}
+			}
+			time{
+				color: #000;
+			}
+		}
+	}
+}

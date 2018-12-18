@@ -1,0 +1,138 @@
+// CONTACTS
+
+.contacts{
+	padding-bottom: 5rem;
+	#map{
+		iframe{
+			height: 700px;
+		}
+		position: relative;
+	} 
+	&-information{
+		position: absolute;
+		right: 7rem;
+		bottom: 2rem;
+		top: 2rem;
+		width: 33rem;
+		z-index: 4;
+		ul li{
+		    margin: 0.2rem 0;
+		    a:hover{
+		    	color: $title;
+		    }
+		}
+		p{
+			margin-top: 0;
+		}
+		.work-hours{
+			position: relative;
+			&:after{
+				content: "";
+				width: 1px;
+				height: 100%;
+				background: #E5E5E5;
+				left: 0;
+				position: absolute;
+				top: 0;
+			}
+		}
+		&-top{
+			background: $wh;
+			padding: 1.5rem 2rem;
+			box-shadow: -10px 15px 40px rgba(0, 0, 0, 0.13);
+			a{
+				font-weight: 500;
+			}
+		}
+		&-bottom{
+			background: $wh;
+			padding: 1.5rem 2rem;
+			box-shadow: -10px 15px 40px rgba(0, 0, 0, 0.13);
+			margin-top: 1rem;
+			position: relative;
+			.write-us-btn{
+				font-size: 1.4rem;
+				font-weight: 700;
+				color: $main;
+				padding: 1rem 0;
+				width: 100%;
+				border-top: 1px solid $main;
+				border-bottom: 1px solid $main;
+				text-align: center;
+				font-family: $font-title;
+				cursor: pointer;
+			}
+			.write-list{
+				display: none;
+				textarea{
+					width: 100%;
+				    margin-bottom: 2rem;
+				    padding: 1rem;
+				}
+			}
+			span{
+				font-size: 0.75rem;
+				color: #c4c4c4;
+			}
+			label{
+			    padding-left: 1.5rem;
+			}
+			.or{
+				color: #0A0A0A;
+				font-weight: 500;
+				text-align: center;
+			}
+			.btn-contacts{
+				position: absolute;
+			    left: 50%;
+			    transform: translate(-50%, 50%);
+			    width: 19rem;
+			    padding: 1.2rem 0;
+			    bottom: 0;
+			}
+			.phone-number{
+				margin-bottom: 1rem;
+			}
+			h2{
+				font-weight: 400;
+				text-align: center;
+			}
+			p{
+				text-align: center;
+			}
+			.subtitle{
+				font-weight: 500;
+				color:$title;
+				margin-top: 1rem;
+			}
+		}
+		&__phone{
+			color: $main;
+		}
+		&__row{
+			display: flex;
+			align-items: flex-start;
+			p{
+				margin-top: 0;
+				font-weight: 500;
+			}
+		}
+	}
+	.values{
+		&__title{
+			text-align: center;
+			margin-top: 4.75rem;
+			margin-bottom: 4rem;
+		}
+		&__block{
+			text-align: center;
+			padding: 0 2rem;
+		}
+		&-img{
+			max-height: 14rem;
+			&__block{
+				min-height: 15rem;
+			}
+		}
+	}
+}
