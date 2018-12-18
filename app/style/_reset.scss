@@ -1,0 +1,57 @@
+
+ol ol,
+ul ul,
+ol ul,
+ul ol{
+	margin-bottom: 0;
+}
+
+img{
+	vertical-align: middle;
+	border-style: none;
+}
+
+svg:not(:root){
+	overflow: hidden;
+}
+
+h1, h2{
+	text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+	line-height: 1.1;
+	font-family: $font-title;
+	color: $title;
+}
+
+h1{
+	font-size: 2.777777777em;
+}
+
+
+h2{
+	font-size: 1.66666667em;
+}
+
+
+h3{
+	font-size: 1.38888889em;
+}
+
+
+h4{
+	font-size: 1.22222222em;
+}
+
+
+h5{
+	font-size: 1.1em;
+}
+
+
+h6{
+	font-size: 1em;
+}

@@ -1,0 +1,190 @@
+@media (max-width : 1600px)   {
+	html{
+		font-size: 16px;
+	}
+}
+
+@media (min-width: 1520px){
+	.container {
+	    max-width: 1480px;
+	}
+}
+
+@media (max-width : 1300px)   {
+
+}
+
+@media (max-width : 1025px)   {
+
+}
+
+@media (max-width : 769px)   {
+	html{
+		font-size: 15px;
+	}
+	h1{
+		font-size:2rem;
+	}
+	h2, h3{
+		font-size: 1.2rem;
+	}
+	.page-title{
+		margin-bottom: 2rem;
+	}
+	.header {
+		.header-phone{
+			display: none;
+		}
+		.main_menu{
+			display: none;
+		}
+		.language{
+			display: none;
+		}
+		.header-logo img{
+			min-width: 6rem;
+		}
+	}
+	.home{
+		.first-screen__btn{
+			margin-top:1rem;
+		    margin-bottom: 6rem;
+			.btn-transperent{
+				display: none;
+			}
+			
+		}
+		.first-screen {
+		    align-items: flex-end;
+		    background: none;
+		    .mob-bg{
+		    	display: block;
+				background-position: 32% 90%;
+			    background-size: 300%;
+		    	position: absolute;
+		    	top: 0;
+		    	left: 0;
+		    	right: 0;
+		    }
+		    .triangle {
+			    top: auto;
+			    bottom: 0;
+			    right: 0;
+			    min-width: 165%;
+			}
+			h1{
+				margin-bottom: 1rem;
+			}
+			.btn{
+				width: 100%;
+			}
+		}
+		.rozrahunok{
+			margin-bottom: 1.9rem;
+
+			h1{
+				font-size: 1.333rem;
+				margin-top: 1rem;
+				margin-bottom: 1.5rem;
+			}
+			.doors-type{
+				margin: 1.4rem;
+			}
+			&-door__img {
+			    max-width: 11.5rem;
+			    max-height: 11.5rem;
+			    &-b{
+		    	    min-height: auto;
+	    	        margin-top: 2rem;
+			    }
+			}
+			&-door{
+			    padding: 0 1.6rem;
+				padding-bottom: 2rem;
+			}
+		}
+		.doors-type .rozrahunok-door:nth-of-type(2):after{
+			content: "";
+			position: absolute;
+			width: 80%;
+			height: 1px;
+			left: 10%;
+			top:0;
+			z-index: 3;
+			background: #E5E5E5
+		}
+		.doors-type .rozrahunok-door:nth-of-type(2):before{
+			content: "";
+			position: absolute;
+			width: 80%;
+			height: 1px;
+			right: 10%;
+			top:100%;
+			z-index: 3;
+			background: #E5E5E5
+		} 
+		.finished-door__name{
+			text-transform: uppercase;
+		}
+		.whywe__subtitle{
+			
+			margin-top: 1.5rem;
+		}
+		.whywe-block__name{
+		    margin-top: -2.3rem;
+		    background: #F8F8F8;
+		    padding: 0rem 1rem;
+		    white-space: nowrap;
+		    padding-left: 1.5rem;
+		}
+		.whywe-block-block {
+		    padding: 0 1.65rem;
+		    padding-bottom: 2rem;
+		    padding-top: 1.5rem;
+	        min-height: auto;
+		}
+		.whywe-block__img{
+			opacity: 1;
+			left: -1.3rem;
+		    padding-left: 1rem;
+		}
+		.whywe-block__icon{
+			max-width: 2.25rem;
+		}
+		.slider-why-we{
+			.slick-dots {
+			    bottom: 0;
+			}
+		}
+		.individual{
+			margin-top: 2rem;
+		    margin-bottom: 2rem;
+		}
+		.feedback{
+			&-right{
+				padding: 1rem;
+			}
+			 .slide{
+			 	padding: 0;
+			 	border: none;
+			 }
+			&-video iframe {
+			    height: 10rem;
+			}
+			h1{
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	.slider-sale .slick-arrow{
+		display: flex !important;
+	}
+	.home-sale__btn{
+		width: 7rem;
+		height: 3rem;
+	}
+}
+
+@media (max-width : 576px)   {
+
+}

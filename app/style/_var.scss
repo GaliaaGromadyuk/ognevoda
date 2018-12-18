@@ -1,0 +1,21 @@
+// COLORS
+$text:  #595959;
+$title: #0A0A0A;
+$main: #E51010;
+$grey: #7A7A7A;
+$wh: #ffffff;
+$border-gray: #E5E5E5;
+
+// FONTS
+$font: 'Roboto', sans-serif;
+$font-title: 'Play', sans-serif;
+
+
+//mixin
+@mixin border-radius($radius){
+    border-radius: $radius;
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+}

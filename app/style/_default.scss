@@ -1,0 +1,48 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	font-family: sans-serif;
+	line-height: 1.4;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: transparent;
+	font-size: 18px;
+	height: 100%;
+}
+
+body{
+	background-color: #F8F8F8;
+	color: $text;
+	font-family: $font;
+	margin: 0;
+	padding: 0;
+	font-weight: 400;
+	overflow-x: hidden;
+}
+
+html,body{
+	height: 100%;
+}
+
+a{
+	text-decoration: none;
+	color: $text;
+}
+
+img, iframe{
+	max-width: 100%;
+	height: auto;
+}
+
+fieldset{
+	border: none;
+	padding: 0px;
+}
+
+.hidden{
+	display: none;
+}
+
