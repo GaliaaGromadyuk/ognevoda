@@ -157,3 +157,7 @@ $('#loadMoreGoods').click(function() {
 // style scrollBar
 new SimpleBar(document.getElementById('filter'), { autoHide: false });
 new SimpleBar(document.getElementById('shopInfo'), { autoHide: false });
+
+$('.btn-filter').click(function() {
+    $('.filter').toggleClass('openedFilter');
+});

@@ -1,6 +1,9 @@
 .main.shop {
     margin-top: 11.5rem;
 }
+.btn-filter {
+    display: none;
+}
 .filter {
     width: 100%;
     height: 80.5vmin;
@@ -526,6 +529,100 @@
                 }
             }
         }
+    }
+}
+
+@media only screen and (max-width: 850px) and (min-width: 768px) {
+    .goods-card {
+        .goods-card__img {
+            height: 180px;
+        }
+        .goods-card__body {
+            .goods-card__reviews {
+                .stars {
+                    > img {
+                        width: 17px;
+                    }
+                }
+            }
+        }
+        .goods-cards__footer {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 22px;
+            height: 110px;
+            .goods-cards__price {
+                font-size: 18px;
+                padding-left: 0;
+                margin-top: 15px;
+            }
+            .goods-cards__price-discount {
+                align-self: center;
+                font-size: 18px;
+                padding-left: 0;
+                >span {
+                    font-size: 16px;
+                }
+            }
+            .goods-cards__btn {
+                align-self: center;
+                width: 100%;
+                margin-top: 14px;
+                > img {
+                    width: 24px;
+                }
+            }
+        }
+    }
+
+    .shop-info {
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 767.8px) {
+    .shop {
+        position: relative;
+    }
+
+    .filter {
+        position: absolute;
+        top: 80px;
+        left: 15px;
+        z-index: 2;
+        width: 360px;
+        transform: translateX(-110%);
+        transition: 0.5s ease;
+        &.openedFilter {
+            transform: translateX(0);
+            box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.04);
+        }
+    }
+    .btn-filter {
+        display: block;
+        position: absolute;
+        top: 38px;
+        left: 55px;
+        z-index: 10;
+        cursor: pointer;
+        > img {
+            width: 30px;
+            margin-right: 8px;
+        }
+    }
+    .filter-type {
+        font-size: 16px;
+            /*style for checkbox*/
+        .label-checkbox {
+            margin-bottom: 18px;
+            padding-left: 30px;
+            .checkmark {
+                margin-top: -11px;
+                height: 22px;
+                width: 22px;
+            }
+        }
+    
     }
 }
 
