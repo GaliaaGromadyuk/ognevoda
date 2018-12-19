@@ -148,7 +148,6 @@ function checkParams() {
 
 }
 
-
 // style select
 $('select').styler();
 
@@ -168,4 +167,5 @@ $('.btn-filter').click(function() {
 
 });
 
+});
 
