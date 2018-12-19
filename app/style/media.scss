@@ -62,10 +62,42 @@
 	.doors-type-popup{
 		padding: 3rem;
 	}
+	.contacts{
+		&-information{
+			margin-top: 2rem;
+			width: 100%;
+			right: 0rem;
+			top: 0;
+			position: inherit;
+			display: flex;
+			justify-content: space-between;
+			&-top{
+				width: 100%;
+			}
+			&-bottom{
+				margin-top: 0;
+			}
+			.work-hours{
+				margin-top: 0rem;
+			}
+		}
+		#map iframe {
+		    height: 500px;
+		}
+	}
 
 }
 
-@media (max-width : 769px)   {
+@media (max-width : 992px)   {
+	.contacts{
+		&-information{
+			.work-hours{
+				margin-top: 2rem;
+			}
+		}
+	}
+}
+@media (max-width : 767px)   {
 	html{
 		font-size: 15px;
 	}
@@ -74,6 +106,9 @@
 	}
 	h2, h3{
 		font-size: 1.2rem;
+	}
+	.main {
+	    margin-top: 14rem;
 	}
 	.page-title{
 		margin-bottom: 2rem;
@@ -110,7 +145,8 @@
 		}
 		&-products{
 			margin: 0;
-			justify-content: space-between;
+			width: 100%;
+			justify-content: space-around;
 			&__block{
 				margin-right: 2.5rem;
 				span{
@@ -168,6 +204,7 @@
 		    background: $main;
 		    width: 100%;
 		    padding: 5rem 0;
+		    overflow-x: scroll;
 		    li a{
 		    	color: $wh;
 		    }
@@ -332,6 +369,24 @@
 	.blog 	.content{
 		margin-top: 1.5rem;
 	}
+	.contacts{
+		&-information{
+			display: flex;
+			flex-direction: column;
+			&-top{
+				width: 100%;
+			}
+			&-bottom{
+				margin-top: 0;
+			}
+			.work-hours{
+				margin-top: 0rem;
+			}
+		}
+		#map iframe {
+		    height: 400px;
+		}
+	}
 	.footer{
 		text-align: center;
 		&__social ul{
@@ -352,5 +407,18 @@
 	}
 	.home .first-screen .triangle{
 		min-width: 165%;
+	}
+	.contacts{
+		&-information{
+			&-top{
+				    text-align: center;
+			}
+			.work-hours{
+				margin-top: 2rem;
+			}
+		}
+	}
+	.contacts-information .work-hours:after{
+		display: none;
 	}
 }

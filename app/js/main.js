@@ -167,5 +167,4 @@ $('.btn-filter').click(function() {
 
 });
 
-});
 
