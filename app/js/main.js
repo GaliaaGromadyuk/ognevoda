@@ -6,6 +6,8 @@ $(window).scroll(function() {
         $('.header').css("background", "none"), 200;
     }
 });
+
+
 jQuery(document).ready(function($) {
 	$('.whywe-block').mouseenter(function() {
 		$(this).children(".whywe-block__img").css('opacity', '1');
@@ -24,19 +26,15 @@ jQuery(document).ready(function($) {
     }
   });
 
-
-
-});
-
 $('.slider').slick({
-	dots: false,
-	arrow: true,
+  dots: false,
+  arrow: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     infinite: true,
-  	slide: ".slide",
-  	prevArrow: ".slider .slider__prev",
-  	nextArrow: ".slider .slider__next",
+    slide: ".slide",
+    prevArrow: ".slider .slider__prev",
+    nextArrow: ".slider .slider__next",
 });
 
 $(function() {
@@ -84,7 +82,7 @@ $(function() {
         $('.slider-sale').slick('resize');
     });
 });
-$('.rozrahunok-door-type').click( function(event){
+$('.rozrahunok-door-type, .sidebar-popup').click( function(event){
   event.preventDefault();
   $('#overlay').fadeIn(400,
     function(){ 
@@ -130,6 +128,10 @@ $( ".write-us-btn" ).click(function() {
   });
 });
 
+$( ".navigation-btn" ).click(function() {
+  $( ".sidebar" ).slideToggle();
+});
+
 
 function checkParams() {
     var name = $('#name-proioma').val();
@@ -144,3 +146,7 @@ function checkParams() {
         $('.rozrah-price-popup #submit').css('display', 'none');
     }
 }
+
+
+});
+
