@@ -46,7 +46,7 @@ $(function() {
         mobileFirst: true,
         arrows: true,
         dots: true,
-        slide: ".col-md",
+        slide: ".col-xl",
         prevArrow: ".slider-sale .slider__prev",
         nextArrow: ".slider-sale .slider__next",
         responsive: [

@@ -198,6 +198,7 @@ header .container{
 		left: 0;
 		right: 0;
 		background: none;
+		flex-wrap: wrap;
 	}
 	&-logo{
 		max-width: 5rem;
@@ -244,6 +245,9 @@ header .container{
 		&:hover{
 			color: darken( $main, 10%);
 		}
+	}
+	.mobile_menu{
+		display: none;
 	}
 	.language__list{
 		padding-left: 0.5rem;

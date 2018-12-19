@@ -88,12 +88,6 @@ gulp.task('style', function () {
 
 gulp.task('image', function () {
     gulp.src(path.app.img)
-        .pipe(imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngquant()],
-            interlaced: true
-        }))
         .pipe(gulp.dest(path.build.img))
 });
 
