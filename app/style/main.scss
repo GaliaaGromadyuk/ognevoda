@@ -198,12 +198,13 @@ header .container{
 		left: 0;
 		right: 0;
 		background: none;
+		flex-wrap: wrap;
 	}
 	&-logo{
 		max-width: 5rem;
 		svg path:last-child{
 			fill: $main;
-			transition: all 0.3s;
+			transition: all 0.35s;
 		}
 	}
 	&-right{
@@ -244,6 +245,9 @@ header .container{
 		&:hover{
 			color: darken( $main, 10%);
 		}
+	}
+	.mobile_menu{
+		display: none;
 	}
 	.language__list{
 		padding-left: 0.5rem;
@@ -294,6 +298,7 @@ header .container{
 }
 .header-products{
 	display: flex;
+	margin: 0 auto;
 	&__block{
 		margin-right: 5.5rem;
 		display: flex;

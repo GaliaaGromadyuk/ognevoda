@@ -1,6 +1,42 @@
 // BLOG
 
 .blog{
+	.navigation-btn{
+		background: $main;
+	    color: white;
+	    border: none;
+	    width: 100%;
+	    margin: 0 15px;
+	    padding: 2rem 0;
+	    text-transform: uppercase;
+	    display: none;
+	}
+	.more{
+		font-weight: 1.33rem;
+		color: #E0DEDE;
+		text-transform: uppercase;
+		font-family: $title;
+		font-weight: 700;
+	    display: flex;
+	    align-items: center;
+	    margin: 4rem auto;
+	    transition: all 0.2s;
+	    &:hover{
+	    	color: $main;
+	    	svg{
+	    		fill: $main;
+	    	}
+	    }
+			svg{
+				max-width: 3.25rem;
+				max-height: 3.25rem;
+				width: 3.25rem;
+				height: 3.25rem;
+				margin-right:1.5rem;
+				fill: #E0DEDE;
+				transition: all 0.2s;
+			}
+		}
 	.sidebar{
 		&-title{
 			font-family: $font-title;
@@ -109,8 +145,11 @@
 	&-article{
 		&__block{
 			background: $wh;
-			box-shadow: -5px 5px 18px rgba(0, 0, 0, 0.07);
 			margin-bottom: 1.65rem;
+			transition: all 0.2s;
+			&:hover{
+				box-shadow: -5px 5px 18px rgba(0, 0, 0, 0.07);
+			}
 		}
 		&__name a{
 			margin-top: 0;
@@ -124,7 +163,7 @@
 			display: block;
 		}
 		&__content{
-			padding: 2.55rem 1.7rem;
+			padding: 1.5rem 1.7rem;
 		}
 		&__description{
 			margin-bottom: 2.75rem;

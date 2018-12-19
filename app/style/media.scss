@@ -2,6 +2,9 @@
 	html{
 		font-size: 16px;
 	}
+	.header .main_menu li{
+		margin: 0 1rem;
+	}
 }
 
 @media (min-width: 1520px){
@@ -11,14 +14,58 @@
 }
 
 @media (max-width : 1300px)   {
-
+	.home{
+		.feedback-right{
+			padding: 1.5rem;
+		}
+	}
 }
 
 @media (max-width : 1025px)   {
+	.header{
+		.main_menu li{
+			margin: 0 0.5rem;
+		}
+		.header-logo {
+		    max-width: 5rem;
+		    min-width: 100%;
+		    margin-bottom: 2rem;
+		}
+		&-products__block{
+			margin-right: 1.5rem;
+			max-width: 30%;
+			span{
+				font-size: 0.8rem;
+			}
+		}
+	}
+	.main{
+		    margin-top: 17rem;
+	}
+	.home{
+		 .feedback .slide{
+		 	padding: 2.5rem 1.5rem;
+		 }
+		.whywe-block-block {
+		    padding: 2rem;
+		}
+		.feedback .slider__next{
+			right: -3rem;
+		}
+		.feedback .slider__prew{
+			left: -3rem;
+		}
+	}
+	.rozrah-price{
+		padding: 2rem;
+	}
+	.doors-type-popup{
+		padding: 3rem;
+	}
 
 }
 
-@media (max-width : 767px)   {
+@media (max-width : 769px)   {
 	html{
 		font-size: 15px;
 	}
@@ -31,14 +78,49 @@
 	.page-title{
 		margin-bottom: 2rem;
 	}
+		.rozrah-price-popup{
+		width: 80%;
+	}
+	.doors-type-popup .door-popup{
+		padding: 1rem;
+		border: none;
+	}
+	.doors-type-popup .rozrahunok-door-type{
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
 	.header {
-		padding: 0;
+		padding:1rem 0;
 		.header-phone{
 			display: none;
 		}
 		.main_menu{
 			flex-direction: column;
 		}
+		.header-logo {
+		    max-width: 5rem;
+		    min-width: auto;
+		    margin-bottom: 0;
+		}
+		.mobile_menu{
+			display: block;
+		}
+		&-black{
+			margin-top: 2rem;
+		}
+		&-products{
+			margin: 0;
+			justify-content: space-between;
+			&__block{
+				margin-right: 2.5rem;
+				span{
+					display: none;
+					margin-right: 2rem;
+				}
+			}
+		}
+
+		
 		.language{
 			display: none;
 			&-mobile{
@@ -108,7 +190,7 @@
 			
 		}
 		.first-screen {
-		    align-items: flex-end;
+		    align-items: center;
 		    background: none;
 		    .mob-bg{
 		    	display: block;
@@ -123,13 +205,13 @@
 			    top: auto;
 			    bottom: 0;
 			    right: 0;
-			    min-width: 165%;
+			    min-width: 130%;
 			}
 			h1{
 				margin-bottom: 1rem;
 			}
 			.btn{
-				width: 100%;
+				width: auto;
 			}
 		}
 		.rozrahunok{
@@ -183,6 +265,7 @@
 			
 			margin-top: 1.5rem;
 		}
+
 		.whywe-block__name{
 		    margin-top: -2.3rem;
 		    background: #F8F8F8;
@@ -222,7 +305,7 @@
 				padding: 1rem;
 			}
 			 .slide{
-			 	padding: 0;
+			 	padding: 2rem;
 			 	border: none;
 			 }
 			&-video iframe {
@@ -240,6 +323,15 @@
 		width: 7rem;
 		height: 3rem;
 	}
+	.sidebar{
+		display: none;
+	}
+	.blog .navigation-btn{
+		display: block;
+	}
+	.blog 	.content{
+		margin-top: 1.5rem;
+	}
 	.footer{
 		text-align: center;
 		&__social ul{
@@ -250,5 +342,15 @@
 }
 
 @media (max-width : 576px)   {
-
+	.home{
+		.first-screen{
+			align-items: flex-end;
+			.btn{
+				width: 100%;
+			}
+		}
+	}
+	.home .first-screen .triangle{
+		min-width: 165%;
+	}
 }
