@@ -422,3 +422,50 @@
 		display: none;
 	}
 }
+
+@media (max-height : 420px) and (orientation: landscape)   {
+	.header{
+		padding: 0.75rem 0;
+		&-black{
+			padding: 0.5rem 0;
+			    margin-top: 1.5rem;
+		}
+		.header-logo{
+			margin-bottom: 0;
+		}
+	}
+	.header-cart__icon:after{
+			height: 0;
+		}
+	.home .first-screen{
+		align-items: flex-end;
+	    padding-bottom: 2rem;
+	}
+	.home .first-screen h1 {
+	    margin-bottom: 0.75rem;
+	        font-size: 2.25rem;
+	}
+	.home .first-screen__btn{
+		margin-top: 1rem;
+	}
+	.home .first-screen__btn{
+		    margin-bottom: 1rem;
+	}
+	.home .first-screen .triangle{
+		display: none;
+	}
+	.home .first-screen .mob-bg{
+		background-size: 100%;
+	}
+	.header__menu{
+		margin-top: 1rem;
+	}
+}
+
+@media (max-height : 420px ) and (max-width : 767.9px) and (min-height: 576px)  {
+	.header{
+		&-black{
+			    margin-top: 3.5rem;
+		}
+	}
+}
