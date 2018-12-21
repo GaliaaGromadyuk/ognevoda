@@ -148,23 +148,71 @@ function checkParams() {
 
 }
 
-$('.slider-big-image').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.slider-nav',
-    infinite: true
-});
-$('.slider-nav').slick({
-    arrows: true,        
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.slider-big-image',
-    vertical: true,
-    infinite: true,
-    focusOnSelect: true
-});
+    $('.slider-big-image').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        infinite: false,
+        asNavFor: '.slider-nav'
+    });
+    $('.slider-nav').slick({
+        arrows: true,        
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.slider-big-image',
+        vertical: true,
+        infinite: false,
+        focusOnSelect: true,
+        responsive: [
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 1400,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                vertical: false
+            }
+          }
+        ]
+    });
+
+    $('.slider-watch-also').slick({
+        arrows: false,
+        // autoplay: true,        
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        dots: true,
+        responsive: [
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            }
+          },
+          {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1
+            }
+          },
+          {
+            breakpoint: 992,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+    });
 
     // style select
     $('select').styler();
@@ -183,7 +231,7 @@ $('.slider-nav').slick({
         new SimpleBar(document.getElementById('shopInfo'), { autoHide: false });
     }
 
-
+    // filter on page shop
     $('.btn-filter').click(function() {
         $('.filter').toggleClass('openedFilter');
     });
@@ -194,5 +242,26 @@ $('.slider-nav').slick({
         }
     });
 
+    // tabs
+    $('#nav-tabs').each(function() {
+        $(this).find('li').each(function(i) {
+            $(this).attr('data-tab', 'tab' + i);
+            $(this).click(function(){
+                $(this).addClass('active').siblings().removeClass('active');
+            });
+        });
+    });
+
+    $('#tabs-content').each(function() {
+        $(this).find('div').each(function(i) {
+            $(this).attr('data-tab', 'tab' + i);
+        });
+    });
+
+    $('.nav-tabs__items').on('click', function() {
+        var dataTab = $(this).data('tab');
+        var getBlock = $(this).closest('.open-goods-desc');
+        getBlock.find('#tabs-content>div[data-tab='+dataTab+']').addClass('active').siblings().removeClass('active');
+    });
 
 });
