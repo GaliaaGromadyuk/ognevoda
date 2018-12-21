@@ -148,17 +148,41 @@ function checkParams() {
 
 }
 
+$('.slider-big-image').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav',
+    infinite: true
+});
+$('.slider-nav').slick({
+    arrows: true,        
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-big-image',
+    vertical: true,
+    infinite: true,
+    focusOnSelect: true
+});
+
     // style select
     $('select').styler();
 
     // load more goods
     $('#loadMoreGoods').click(function() {
-        $('#goods').append('<div class="col-12 col-sm-6 col-lg-4"><div class="goods-card"> <a href="#" class="goods-card__img"><img src="img/goods/window-2.png" alt=""></a><div class="goods-card__body"><a href="#" class="goods-cards__title">Прямокутна дверка</a><span class="goods-cards__size">Розмір: 800х350 мм</span><div class="goods-card__reviews"><div class="stars"><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""></div><a href="#">4 відгука</a></div></div><div class="goods-cards__footer"><div class="goods-cards__price">5 999 грн. </div><a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> вкорзину</a></div></div></div><div class="col-12 col-sm-6 col-lg-4"><div class="goods-card"> <a href="#" class="goods-card__img"><img src="img/goods/window-2.png" alt=""></a><div class="goods-card__body"><a href="#" class="goods-cards__title">Прямокутна дверка</a><span class="goods-cards__size">Розмір: 800х350 мм</span><div class="goods-card__reviews"><div class="stars"><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""></div><a href="#">4 відгука</a></div></div><div class="goods-cards__footer"><div class="goods-cards__price">5 999 грн. </div><a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> вкорзину</a></div></div></div><div class="col-12 col-sm-6 col-lg-4"><div class="goods-card"> <a href="#" class="goods-card__img"><img src="img/goods/window-2.png" alt=""></a><div class="goods-card__body"><a href="#" class="goods-cards__title">Прямокутна дверка</a><span class="goods-cards__size">Розмір: 800х350 мм</span><div class="goods-card__reviews"><div class="stars"><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""></div><a href="#">4 відгука</a></div></div><div class="goods-cards__footer"><div class="goods-cards__price">5 999 грн. </div><a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> вкорзину</a></div></div></div>');
+        $('#goods-card').append('<div class="col-12 col-sm-6 col-lg-4"><div class="goods-card"> <a href="#" class="goods-card__img"><img src="img/goods/window-2.png" alt=""></a><div class="goods-card__body"><a href="#" class="goods-cards__title">Прямокутна дверка</a><span class="goods-cards__size">Розмір: 800х350 мм</span><div class="goods-card__reviews"><div class="stars"><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""></div><a href="#">4 відгука</a></div></div><div class="goods-cards__footer"><div class="goods-cards__price">5 999 грн. </div><a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> вкорзину</a></div></div></div><div class="col-12 col-sm-6 col-lg-4"><div class="goods-card"> <a href="#" class="goods-card__img"><img src="img/goods/window-2.png" alt=""></a><div class="goods-card__body"><a href="#" class="goods-cards__title">Прямокутна дверка</a><span class="goods-cards__size">Розмір: 800х350 мм</span><div class="goods-card__reviews"><div class="stars"><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""></div><a href="#">4 відгука</a></div></div><div class="goods-cards__footer"><div class="goods-cards__price">5 999 грн. </div><a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> вкорзину</a></div></div></div><div class="col-12 col-sm-6 col-lg-4"><div class="goods-card"> <a href="#" class="goods-card__img"><img src="img/goods/window-2.png" alt=""></a><div class="goods-card__body"><a href="#" class="goods-cards__title">Прямокутна дверка</a><span class="goods-cards__size">Розмір: 800х350 мм</span><div class="goods-card__reviews"><div class="stars"><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""><img src="img/icons/star-green.svg" alt=""></div><a href="#">4 відгука</a></div></div><div class="goods-cards__footer"><div class="goods-cards__price">5 999 грн. </div><a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> вкорзину</a></div></div></div>');
     });
 
     // style scrollBar
-    new SimpleBar(document.getElementById('filter'), { autoHide: false });
-    new SimpleBar(document.getElementById('shopInfo'), { autoHide: false });
+    if( $("#filter").length === 1 ){
+        new SimpleBar(document.getElementById('filter'), { autoHide: false });
+    }
+
+    if( $("#shopInfo").length === 1 ){
+        new SimpleBar(document.getElementById('shopInfo'), { autoHide: false });
+    }
+
 
     $('.btn-filter').click(function() {
         $('.filter').toggleClass('openedFilter');
