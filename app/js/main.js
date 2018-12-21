@@ -153,7 +153,8 @@ $('.slider-big-image').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    asNavFor: '.slider-nav'
+    asNavFor: '.slider-nav',
+    infinite: true
 });
 $('.slider-nav').slick({
     arrows: true,        
@@ -161,7 +162,7 @@ $('.slider-nav').slick({
     slidesToScroll: 1,
     asNavFor: '.slider-big-image',
     vertical: true,
-    infinite: false,
+    infinite: true,
     focusOnSelect: true
 });
 
