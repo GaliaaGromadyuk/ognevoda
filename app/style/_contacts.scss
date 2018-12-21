@@ -9,12 +9,19 @@
 		position: relative;
 	} 
 	&-information{
+		width: 33rem;
+		&__social{
+		    margin-left: 2rem;
+		}
+		
+		&__block{
 		position: absolute;
-		right: 7rem;
+		right: 3.5rem;
 		bottom: 2rem;
 		top: 2rem;
-		width: 33rem;
-		z-index: 4;
+		z-index: 4;	
+		display: flex;
+		}
 		ul li{
 		    margin: 0.2rem 0;
 		    a:hover{
