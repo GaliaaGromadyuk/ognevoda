@@ -181,7 +181,7 @@ function checkParams() {
             }
           },
           {
-            breakpoint: 578,
+            breakpoint: 500,
               settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
@@ -220,7 +220,7 @@ function checkParams() {
             }
           },
           {
-            breakpoint: 578,
+            breakpoint: 500,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1

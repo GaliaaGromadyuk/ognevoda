@@ -740,6 +740,12 @@
             font-size: 20px;
             text-align: center;
         }
+        &__reviews {
+           justify-content: center;
+        }
+        &__price-discount {
+            text-align: center;
+        }
         &__group-btn {
             flex-direction: column;
             justify-content: center;
@@ -795,7 +801,7 @@
     .slider-watch-also {
         margin-bottom: 40px;
         .goods-card {
-            margin: 0;
+            margin: 10px;
             .goods-card__img {
                 height: 180px;
             }
