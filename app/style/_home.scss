@@ -195,24 +195,6 @@
 			}
 		}
 	}
-	.finished-door{
-		background: url('../img/finished-bg.png');
-		background-size: cover;
-		background-position: center;
-		padding: 2rem;
-		margin-top: 4rem;
-		text-align: center;
-		margin-bottom: 4.8rem;
-		&__name{
-			font-size: 1.3333rem;
-			font-family: $font-title;
-			color: $wh;
-			margin-top: 0;
-		}
-		.btn-red{
-			box-shadow: -12px 15px 10px rgba(0, 0, 0, 0.7);
-		}
-	}
 	.whywe{
 
 		&__title{
@@ -400,5 +382,24 @@
 			position: absolute;
 			top: 50%;
 		}
+	}
+}
+.finished-door{
+	background: url('../img/finished-bg.png');
+	background-size: cover;
+	background-position: center;
+	padding: 2rem;
+	margin-top: 4rem;
+	text-align: center;
+	margin-bottom: 4.8rem;
+	&__name{
+		font-size: 1.3333rem;
+		font-family: $font-title;
+		font-weight: 700;
+		color: $wh;
+		margin-top: 0;
+	}
+	.btn-red{
+		box-shadow: -12px 15px 10px rgba(0, 0, 0, 0.7);
 	}
 }

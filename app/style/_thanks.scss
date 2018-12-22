@@ -1,0 +1,72 @@
+.thanks{
+	padding-bottom: 4.75rem;
+	text-align: center;
+	h1{
+		color: $main;
+		margin-bottom: 0;
+	}
+	h4{
+		margin-top: 2.5rem;
+		margin-bottom: 1.5rem;
+	}
+	&-contacts{
+		display: flex;
+		justify-content: center;
+		ul li{
+			margin-bottom: 0.3rem;
+		}
+	}
+	&-phones ul li a{
+		color: $text;
+	    margin-bottom: 0.3rem;
+	    display: block;
+		&:hover{
+			color: $main;
+		}
+	}
+	&-hours{
+		max-width: 13rem;
+		text-align: left;
+	}
+	&-phones{
+		max-width: 13rem;
+		text-align: left;
+	}
+	&-social ul{
+		display: flex;
+		justify-content: center;
+		margin-top: 2rem;
+		margin-bottom: 4rem;
+		li{
+			margin-right: 0.5rem;
+		}
+		
+	}
+	.blog-article{
+		&__img{
+			max-height: 8rem;
+			min-height: 8rem;
+		}
+		&__content{
+			padding: 1.5rem;
+			padding-bottom: 0;
+		    display: flex;
+		    flex-direction: column;
+		    height: 100%;
+		    justify-content: space-between;
+		}
+		&__name{
+			margin-top: 0;
+			text-align: left;
+			margin-bottom: 2rem;
+		}
+		&__block{
+			padding-bottom: 0.75rem;
+			margin-bottom: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+		}
+	}
+}

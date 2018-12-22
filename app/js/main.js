@@ -264,4 +264,5 @@ function checkParams() {
         getBlock.find('#tabs-content>div[data-tab='+dataTab+']').addClass('active').siblings().removeClass('active');
     });
 
-});
+ });
+
