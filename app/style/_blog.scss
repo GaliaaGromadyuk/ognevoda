@@ -40,6 +40,7 @@
 	.sidebar{
 		&-title{
 			font-family: $font-title;
+			font-weight: 700;
 			color: $main;
 			font-weight: 700;
 			margin-top: 0;
@@ -114,8 +115,8 @@
 			&__amount{
 				font-size: 2.222rem;
 				color: $title;
-				font-weight: 500;
 				font-family: $font-title;
+				font-weight: 700;
 				margin: 0;
 			}
 			&__block{

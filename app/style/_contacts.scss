@@ -1,3 +1,4 @@
+
 // CONTACTS
 
 .contacts{
@@ -9,6 +10,16 @@
 		position: relative;
 	} 
 	&-information{
+		width: 33rem;
+		&__social{
+		    margin-left: 2rem;
+		    ul li{
+		    	display: block;
+		    	margin-bottom: 0.5rem;
+		    }
+		}
+		
+		&__block{
 		position: absolute;
 		right: 7rem;
 		bottom: 2rem;
@@ -19,7 +30,8 @@
 		    margin: 0.2rem 0;
 		    a:hover{
 		    	color: $title;
-		    }
+			    }
+			}
 		}
 		p{
 			margin-top: 0;
@@ -60,6 +72,7 @@
 				border-bottom: 1px solid $main;
 				text-align: center;
 				font-family: $font-title;
+				font-weight: 700;
 				cursor: pointer;
 			}
 			.write-list{
