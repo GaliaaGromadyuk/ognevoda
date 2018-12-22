@@ -230,7 +230,7 @@ function checkParams() {
     });
 
     // style select
-    $('select').styler();
+    $('select, input[type="number"]').styler();
 
     // load more goods
     $('#loadMoreGoods').click(function() {
