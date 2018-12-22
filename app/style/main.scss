@@ -12,6 +12,7 @@ a{
 	border-radius: 60px;
 	text-transform: uppercase;
 	font-family: $font-title;
+	font-weight: 700;
 	min-width: 12rem;
 	text-align: center;
 	display: inline-block;
@@ -315,6 +316,7 @@ header .container{
 			color: #8C8787;
 			font-weight: 700;
 			font-family: $font-title;
+			font-weight: 700;
 			transition: all 0.2s;
 		}
 		svg{
@@ -616,7 +618,14 @@ header .container{
 
 @import 'blog';
 
+@import 'open-blog';
+
+@import 'thanks';
+
+@import '404';
+
 @import 'shop';
+
 @import 'open-goods';
 
 @import 'media';

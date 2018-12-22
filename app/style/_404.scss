@@ -1,0 +1,32 @@
+.p404{
+	padding-bottom: 7rem;
+	h1{
+		font-size: 22rem;
+		color: $main;
+		font-family: $font-title;
+		margin: 0;
+	}
+	.oops{
+		font-size: 2rem;
+		color: $title;
+		font-family: $font-title;
+		font-weight: 700;
+		margin: 0;
+	}
+	h4{
+		margin-top: 0.5rem;
+		margin-bottom: 2rem;
+	}
+	&-btn{
+		.btn-red{
+			margin-right: 1.5rem;
+		}
+		a{
+			    padding: 1rem 2.5rem;
+			    min-width: auto;
+		}
+	}
+	&-block{
+		    margin-top: -10rem;
+	}
+}
