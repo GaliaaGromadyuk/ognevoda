@@ -1,0 +1,48 @@
+.basket__title {
+    margin-top: 22px;
+    margin-bottom: 52px;
+}
+
+
+
+
+.basket-empty {
+   width: 500px;
+   margin: 0 auto;
+   text-align: center;
+   margin-bottom: 48px;
+   &__title {
+       text-align: center;
+   }
+   .btn-red {
+        width: 474px;
+        height: 80px;
+        @include border-radius(60px);
+        margin-top: 33px;
+        font-family: $title;
+        font-style: normal;
+        font-weight: bold;
+        line-height: normal;
+        font-size: 22px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+   }
+}
+
+@media only screen and (max-width: 577px) {
+    .basket-empty {
+        width: 100%;;
+        margin-bottom: 28px;
+        .btn-red {
+             width: auto;
+             height: 70px;
+             margin-top: 10px;
+             font-size: 17px;
+             padding: 0 22px;
+        }
+     }
+}
