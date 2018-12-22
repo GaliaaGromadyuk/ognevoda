@@ -21,12 +21,11 @@
 		
 		&__block{
 		position: absolute;
-		right: 3.5rem;
+		right: 7rem;
 		bottom: 2rem;
 		top: 2rem;
-		z-index: 4;	
-		display: flex;
-		}
+		width: 33rem;
+		z-index: 4;
 		ul li{
 		    margin: 0.2rem 0;
 		    a:hover{
