@@ -345,6 +345,122 @@
     }
 }
 
+//modal window 
+.popup-you-basket {
+    max-width: 1225px;
+    max-height: 80vh;
+    top: 50%;
+	left: 50%;
+	position: fixed;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	display: none;
+	opacity: 0;  
+	z-index: 999;
+	width: 80%;
+	height: auto;
+	background: $wh;
+    padding: 75px 120px;
+    .popup-body {
+        width: 100%;
+        max-height: 48vh;
+        overflow-y: auto;
+        .your-delivery {
+            width: 100%;
+            display: flex;
+            position: relative;
+            margin-bottom: 36px;
+            span {
+                display: block;
+                margin-bottom: 16px;
+                padding-top: 4px;
+            }
+            p {
+                font-family: $font-title;
+                color: $title;
+                font-weight: 700;
+                margin: 0;
+            }
+            &__img {
+                width: 120px;
+                margin-right: 22px;
+                padding-right: 22px;
+                border-right: 1px solid $border-gray;
+            }
+            &__title {
+                width: 317px;
+                margin-right: 22px;
+                padding-right: 22px;
+                border-right: 1px solid $border-gray;
+                > p {
+                    font-size: 20px;
+                }
+            }
+            &__number {
+                width: 250px;
+                margin-right: 22px;
+                padding-right: 22px;
+                border-right: 1px solid $border-gray;
+            }
+            &__price {
+                > p {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    .popup-footer {
+        width: 100%;
+        position: relative;
+        .delivery-total-price {
+            border-top: 1px solid $border-gray;
+            margin-top: 36px;
+            padding-top: 26px;
+            text-align: right;
+            font-family: $font-title;
+            color: $main;
+            font-size: 30px;
+            font-weight: 700;
+            > span {
+                font-family: $font;
+                font-weight: normal;
+                font-size: 18px;
+                color: $text;
+                padding-right: 14px;
+            }
+        }
+        .group-btn-you-delivery {
+            position: absolute;
+            bottom: -108px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            .btn-you-delivery {
+                width: 350px;
+                height: 65px;
+                @include border-radius(60px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: $font-title;
+                font-weight: bold;
+                font-size: 18px;
+                text-transform: uppercase;
+                margin: 0 13px;
+                &:hover {
+                    box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.45);
+                }
+            }
+            .btn-gray {
+                background: #F3F3F3;
+                color: $title;
+                box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1600px) {
     .goods__image {
         width: 100%;
@@ -496,6 +612,16 @@
             }
         }
     }
+
+    //modal window 
+    .popup-you-basket {
+        padding: 65px 60px;
+        .popup-footer {
+            .group-btn-you-delivery {
+                bottom: -96px;
+            }
+        }
+    }
     
 }
 
@@ -569,6 +695,70 @@
             }
         }
     }
+
+    //modal window 
+.popup-you-basket {
+    padding: 55px 40px;
+    .popup-body {
+        .your-delivery {
+            width: 100%;
+            display: flex;
+            position: relative;
+            margin-bottom: 26px;
+            span {
+                display: block;
+                margin-bottom: 10px;
+                padding-top: 4px;
+            }
+            &__img {
+                width: 120px;
+                margin-right: 16px;
+                padding-right: 16px;
+                border-right: 1px solid $border-gray;
+            }
+            &__title {
+                width: 250px;
+                margin-right: 16px;
+                padding-right: 16px;
+                border-right: 1px solid $border-gray;
+                > p {
+                    font-size: 18px;
+                }
+            }
+            &__number {
+                width: 160px;
+                margin-right: 16px;
+                padding-right: 16px;
+                border-right: 1px solid $border-gray;
+            }
+            &__price {
+                > p {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+    .popup-footer {
+        .delivery-total-price {
+            margin-top: 26px;
+            padding-top: 16px;
+            font-size: 28px;
+            > span {
+                font-size: 16px;
+                padding-right: 10px;
+            }
+        }
+        .group-btn-you-delivery {
+            bottom: -80px;
+            .btn-you-delivery {
+                width: 280px;
+                height: 55px;
+                font-size: 16px;
+                margin: 0 10px;
+            }
+        }
+    }
+}
     
 }
 

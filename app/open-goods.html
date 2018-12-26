@@ -134,7 +134,8 @@
                 </a>
             </div>
             <div class="header-cart__icon">
-                <a href="basket-empty.html" class="header-cart__icon-link"><img src="img/shopping-cart-empty-side-view.svg" alt="cart"></a>
+                <a href="basket-empty.html" class="header-cart__icon-link"><img src="img/shopping-cart-empty-side-view.svg"
+                        alt="cart"></a>
                 <span>1</span>
             </div>
         </div>
@@ -189,11 +190,11 @@
                                             </div>
                                         </div>
                                         <ul class="link-social">
-                                                <li><a href="#"><img src="img/facebook2.svg" alt=""></a></li>
-                                                <li><a href="#"><img src="img/instagram4.svg" alt=""></a></li>
-                                                <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
-                                                <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
-                                                <li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+                                            <li><a href="#"><img src="img/facebook2.svg" alt=""></a></li>
+                                            <li><a href="#"><img src="img/instagram4.svg" alt=""></a></li>
+                                            <li><a href="#"><img src="img/youtube.svg" alt=""></a></li>
+                                            <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+                                            <li><a href="#"><img src="img/viber.svg" alt=""></a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -215,8 +216,8 @@
                                             <p>5 999 <span>грн.</span></p>
                                         </div>
                                         <div class="goods-info__group-btn">
-                                            <a href="basket.html" class="btn-red">в корзину</a>
-                                            <a href="#" class="btn-transperent">покупка в один клік</a>
+                                            <a href="#" class="btn-red btn-basket-open">в корзину</a>
+                                            <a href="basket.html" class="btn-transperent">покупка в один клік</a>
                                         </div>
                                         <ul class="goods-info__list">
                                             <li>800x350 мм,</li>
@@ -270,13 +271,25 @@
                                             <div class="tabs-content__info">1</div>
                                             <div class="tabs-content__info active">
                                                 <ul>
-                                                    <li><span>Розмір:</span> <p>800х350 мм</p></li>
-                                                    <li><span>Скло:</span> <p>4 мм термостійка склокераміка</p></li>
-                                                    <li><span>Метеріал:</span> <p>4 мм конструкційна сталь</p></li>
-                                                    <li><span>Технології:</span> <p>«Чисте скло»</p></li>
-                                                    <li><span>Тип конструкції:</span> <p>Конструкція накладного типу</p></li>
-                                                    <li><span>Особливості:</span> <p>Декоративне напилення по периметру
-                                                        скла, герметичність</p></li>
+                                                    <li><span>Розмір:</span>
+                                                        <p>800х350 мм</p>
+                                                    </li>
+                                                    <li><span>Скло:</span>
+                                                        <p>4 мм термостійка склокераміка</p>
+                                                    </li>
+                                                    <li><span>Метеріал:</span>
+                                                        <p>4 мм конструкційна сталь</p>
+                                                    </li>
+                                                    <li><span>Технології:</span>
+                                                        <p>«Чисте скло»</p>
+                                                    </li>
+                                                    <li><span>Тип конструкції:</span>
+                                                        <p>Конструкція накладного типу</p>
+                                                    </li>
+                                                    <li><span>Особливості:</span>
+                                                        <p>Декоративне напилення по периметру
+                                                            скла, герметичність</p>
+                                                    </li>
                                                 </ul>
                                             </div>
                                             <div class="tabs-content__info">3</div>
@@ -314,13 +327,14 @@
                                     <span class="goods-cards__size">Розмір: 800х350 мм</span>
                                 </div>
                                 <div class="goods-cards__footer">
-                                        <div class="goods-cards__price-discount">
-                                            <span>7 200 грн. </span>
-                                            5 999 грн.
-                                        </div>
-                                        <a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> в
-                                            корзину</a>
+                                    <div class="goods-cards__price-discount">
+                                        <span>7 200 грн. </span>
+                                        5 999 грн.
                                     </div>
+                                    <a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg"
+                                            alt="shopping-cart"> в
+                                        корзину</a>
+                                </div>
                             </div>
                             <div class="goods-card">
                                 <a href="#" class="goods-card__img">
@@ -430,6 +444,50 @@
             </div>
         </section>
         <!-- watch-also end -->
+
+        <!-- POPUP start -->
+        <div class="form">
+            <div id="overlay"></div>
+
+            <!-- POPUP DOOR TYPE start-->
+            <div class="popup-you-basket">
+                <span class="modal_close"></span>
+                <div class="popup-body" id="popup-body">
+                    <div class="your-delivery">
+                        <div class="your-delivery__img">
+                            <img src="img/open-goods/picture.png" alt="">
+                        </div>
+                        <div class="your-delivery__title">
+                            <span>Назва товару</span>
+                            <p>Прямокутна серійна дверка для каміна</p>
+                        </div>
+                        <div class="your-delivery__number">
+                            <span>Кількість</span>
+                            <div class="spinner">
+                                <input type="number" min="0" max="100" step="1" value="1">
+                            </div>
+                        </div>
+                        <div class="your-delivery__price">
+                            <span>Ціна</span>
+                            <p>5 999 грн.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <div class="delivery-total-price">
+                        <span>Всього:</span>
+                        5 999 грн.
+                    </div>
+                    <div class="group-btn-you-delivery">
+                        <a href="#" class="btn-red btn-you-delivery">покупка в один клік</a>
+                        <a href="#" class="btn-gray btn-you-delivery">продовжити покупки</a>
+                    </div>
+                </div>
+            </div>
+            <!-- POPUP DOOR TYPE end-->
+
+        </div>
+        <!-- POPUP end -->
     </main>
     <footer class="footer">
         <div class="container">
