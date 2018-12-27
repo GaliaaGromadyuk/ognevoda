@@ -31,8 +31,6 @@
 		}
 		.header-logo {
 		    max-width: 5rem;
-		    min-width: 100%;
-		    margin-bottom: 2rem;
 		}
 		&-products__block{
 			margin-right: 1.5rem;
@@ -51,6 +49,7 @@
 		 }
 		.whywe-block-block {
 		    padding: 2rem;
+		    min-height: 17rem;
 		}
 		.feedback .slider__next{
 			right: -3rem;
@@ -58,9 +57,17 @@
 		.feedback .slider__prew{
 			left: -3rem;
 		}
+		.first-screen__btn{
+			justify-content: flex-start;
+			margin-top: 2rem;
+		}
+		.first-screen h1{
+			margin: 1rem 0;
+			font-size: 2rem;
+		}
 	}
 	.rozrah-price{
-		padding: 1rem;
+		padding: 3rem;
 	    padding-top: 3rem;
 	    input{
 	    	margin-bottom: 1rem;
@@ -120,7 +127,7 @@
 		    margin-top: -6rem;
 	}
 		.rozrah-price-popup, .partners-popup, .doors-type-popup{
-		width: 95%;
+		width: 75%;
 		height: 95vh;
 	}
 	.rozrah-price .proiom label span{
@@ -147,8 +154,8 @@
 	    margin: 0 auto;
 	    text-align: center;
 	    display: block;
-	    margin-top: 1rem;
-	}
+        margin-top: 3rem;
+	}    
 }
 @media (max-width : 767px)   {
 	html{
@@ -211,7 +218,7 @@
 			&-mobile{
 			    margin-top: 3rem;
 			    display: flex;
-			    flex-direction: row;
+			    flex-direction: column;
 			    .language__list{
 			    	    margin: 0 auto;
 			    }
@@ -312,8 +319,6 @@
 				margin: 1.4rem;
 			}
 			&-door__img {
-			    max-width: 7em;
-			    max-height: 7rem;
 			    &-b{
 		    	    min-height: auto;
 	    	        margin-top: 0rem;
@@ -323,6 +328,12 @@
 			    padding: 0 1.6rem;
 				padding-bottom: 2rem;
 			}
+		}
+		.doors-type-popup ul li{
+			margin-right: 0;
+		}
+		.doors-type-popup .door-popup{
+			margin: 1rem;
 		}
 		.doors-type .rozrahunok-door:nth-of-type(2):after{
 			content: "";
@@ -344,6 +355,18 @@
 			z-index: 3;
 			background: #E5E5E5
 		} 
+		.whywe .whywe-block::after{
+			display: none;
+		}
+		.whywe .whywe-block::before{
+			display: none;
+		}
+		.whywe .whywe-block-block::before{
+			display: none;
+		}
+		.whywe .whywe-block-block::after{
+			display: none;
+		}
 		.finished-door__name{
 			text-transform: uppercase;
 		}
@@ -363,7 +386,7 @@
 		    padding: 0 1.65rem;
 		    padding-bottom: 2rem;
 		    padding-top: 1.5rem;
-	        min-height: auto;
+	        min-height: 16rem;
 		}
 		.whywe-block__img{
 			opacity: 1;
@@ -452,7 +475,17 @@
 			.btn{
 				width: 100%;
 			}
+			.triangle{
+				display: none;
+			}
 		}
+		.whywe-block-block {
+	        min-height: 13rem;
+		}
+	}
+	.rozrah-price-popup, .partners-popup, .doors-type-popup{
+		width: 95%;
+		height: 95vh;
 	}
 	.home .first-screen .triangle{
 		min-width: 165%;
@@ -487,6 +520,9 @@
 	}
 	.contacts-information .work-hours:after{
 		display: none;
+	}
+	.rozrah-price{
+		padding: 1rem;
 	}
 }
 
@@ -545,6 +581,7 @@
 	.header__menu{
 		margin-top: 1rem;
 	}
+
 }
 
 @media (max-height : 420px ) and (max-width : 767.9px) and (min-height: 576px)  {

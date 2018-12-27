@@ -7,10 +7,14 @@
 		display: flex;
 		align-items: center;
 		position: relative;
+		// &__text{
+		// 	background: rgba(255,255,255, 0.7);
+		// 	padding: 1.5rem 3rem;
+		// }
 		.triangle{
 			position: absolute;
-			top: 6rem;
-			bottom: 6rem;
+			top: 50%;
+			transform: translateY(-50%);
 			right: 0;
 			max-height: 80vh;
 		}
@@ -26,8 +30,10 @@
 
 		&__btn{
 			display: flex;
-			justify-content: space-between;
 			margin-top: 4rem;
+			a:first-child{
+				margin-right: 1.5rem;
+			}
 		}
 	}
 	&-sale{
@@ -174,8 +180,6 @@
 				}
 			}
 			&__img{
-				max-width: 17.75rem;
-				max-height: 17rem;
 				position: relative;
 				display: block;
 				margin: 0 auto;
@@ -194,6 +198,12 @@
 				margin: 0 auto;
 			}
 		}
+	}
+	.stars{
+		display: inherit;
+	}
+	.slider-why-we > .col-12:focus {
+	    outline: none;
 	}
 	.whywe{
 
