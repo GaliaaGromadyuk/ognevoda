@@ -174,7 +174,7 @@ $( ".testimonial-icon:first-child" ).click(function() {
         arrows: false,
         fade: true,
         infinite: false,
-        asNavFor: '.slider-nav'
+        asNavFor: '.slider-nav, .slider-popup'
     });
     $('.slider-nav').slick({
         arrows: true,        
@@ -322,12 +322,26 @@ $( ".testimonial-icon:first-child" ).click(function() {
       });
 
 
-      $('.test-popup-link').magnificPopup({
-        delegate: 'img',
-        type:'image',
+      $('.goods__image-big>img').magnificPopup({
+        type:'inline',
         midClick: true,
-        gallery: {
-          enabled: true
+        items: [
+          {
+            src: '#test-popup', // CSS selector of an element on page that should be used as a popup
+            type: 'inline'
+          }
+        ],
+        callbacks: {
+          open: function() {
+            $('.slider-popup').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              fade: true,
+              infinite: false,
+              asNavFor: '.slider-big-image, .slider-nav'
+          });
+          }
         }
       });
       
