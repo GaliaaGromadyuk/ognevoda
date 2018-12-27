@@ -383,7 +383,7 @@
     padding: 75px 120px;
     .popup-body {
         width: 100%;
-        max-height: 48vh;
+        max-height: 46vh;
         overflow-y: auto;
         .your-delivery {
             width: 100%;
@@ -451,7 +451,7 @@
         }
         .group-btn-you-delivery {
             position: absolute;
-            bottom: -108px;
+            bottom: -104px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -1181,6 +1181,59 @@
                     margin: 0;
                     &:first-of-type {
                         margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-height : 420px) and (orientation: landscape) {
+    //modal window 
+    .popup-you-basket {
+        width: 90%;
+        padding: 25px 20px 80px;
+        max-height: 86vh;
+        .modal_close {
+            z-index: 5;
+            background-color: $wh;
+        }
+        .popup-body {
+            max-height: 42vh;
+            .your-delivery {
+                span {
+                    min-width: 100px;
+                    font-size: 12px;
+                }
+                &__img {
+                    width: 100px;
+                }
+                &__title {
+                    > p {
+                        font-size: 16px;
+                    }
+                }
+                &__number {
+                    .spinner {
+                        max-width: 128px;
+                    }
+                }
+            }
+        }
+        .popup-footer {
+            .delivery-total-price {
+                font-size: 22px;
+            }
+            .group-btn-you-delivery {
+                bottom: -64px;
+                flex-direction: row;
+                .btn-you-delivery {
+                    width: 50%;
+                    max-width: 290px;
+                    margin: 0 10px;
+                    font-size: 14px;
+                    &:first-of-type {
+                        margin-bottom: 0;
                     }
                 }
             }
