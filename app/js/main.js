@@ -193,7 +193,7 @@ $( ".testimonial-icon:first-child" ).click(function() {
             }
           },
           {
-            breakpoint: 1400,
+            breakpoint: 1341,
               settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,

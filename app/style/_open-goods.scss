@@ -1,17 +1,3 @@
-.path-page {
-    margin-top: -24px;
-    a{
-        &:first-of-type {
-        color: $title;
-        }
-        &::after {
-            content: '/';
-            padding-left: 5px;
-            color: $text;
-        }
-    }
-}
-
 .container-fluid {
     max-width: 1920px;
 }
@@ -122,6 +108,26 @@
         font-size: 30px;
         margin: 6px 0 14px;
     }
+    &__status {
+        margin-bottom: 12px;
+        font-weight: 500;
+        color: $title;
+        > span {
+            color: $text;
+        }
+        .availability {
+            color: $border-green;
+            padding-right: 10px;
+        }
+        .under-order {
+            color: #FDB037;
+            padding-right: 6px;
+        }
+        .not-availability {
+            color: $text;
+            padding-right: 10px;
+        }
+    }
     &__reviews {
         display: flex;
         align-items: flex-end;
@@ -206,15 +212,18 @@
         display: flex;
         align-items: center;
         margin-bottom: 10px;
-        > img {
-            width: 30px;
-            margin-right: 13px;
+        a {
+            > img {
+                width: 30px;
+                margin-right: 13px;
+            }
+            span {
+                color: $main;
+                padding-right: 4px;
+                } 
         }
         p {
             margin: 0;
-            span {
-            color: $main;
-            } 
         }
     }
 }
@@ -265,14 +274,17 @@
     margin: 0;
     list-style-type: none;
     &__items {
+        width: 25%;
         background: #F1F1F1;
         @include border-radius(2px);
-        padding: 12px 60px;
+        padding: 12px 0;
         font-family: $font-title;
         text-transform: uppercase;
         font-weight: 700;
         margin: 0 1px;
         cursor: pointer;
+        display: flex;
+        justify-content: center;
         &.active {
             background: $main;
             color: $wh;
@@ -510,7 +522,7 @@
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1340px) {
     .goods__image {
         flex-flow: column;
         .link-social {
@@ -835,12 +847,6 @@
         }
     }
 
-    .nav-tabs {
-        &__items {
-            padding: 12px 26px;
-        }
-    }
-
     .box-tabs-content {
         margin-bottom: 25px;
         padding: 30px 0 50px;
@@ -965,7 +971,8 @@
 @media only screen and (max-width: 767.8px) {
     .nav-tabs {
         &__items {
-            padding: 12px 17px;
+            width: auto;
+            padding: 12px 15px;
         }
     }
 
@@ -1076,6 +1083,12 @@
             .btn-transperent {
                 width: 240px;
                 height: 54px;
+            }
+        }
+        &__addition-info {
+           display: inline-block;
+            p {
+                display: inline;
             }
         }
     }
