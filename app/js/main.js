@@ -7,6 +7,20 @@ $(window).scroll(function() {
     }
 });
 
+function checkParams() {
+    var name = $('#name-proioma').val();
+    var phone = $('#phone-proioma').val();
+    var height = $('#height-proioma').val();
+    var width = $('#width-proioma').val();
+
+     
+    if(name.length >=1 && width.length >=1 && phone.length >=10 && height.length >=1) {
+        $('.rozrah-price-popup #submit').css('display', 'block');
+    } else {
+        $('.rozrah-price-popup #submit').css('display', 'none');
+    }
+
+}
 
 jQuery(document).ready(function($) {
 	$('.whywe-block').mouseenter(function() {
@@ -117,6 +131,23 @@ $('.modal_close, #overlay').click( function(){
       }
     );
 });
+$('.parnters-btn').click( function(event){
+  event.preventDefault();
+  $('#overlay').fadeIn(400,
+    function(){ 
+      $('.partners-popup') 
+        .css('display', 'block') 
+        .animate({opacity: 1, top: '50%'}, 200); 
+  });
+});
+$('.modal_close, #overlay').click( function(){
+  $('.partners-popup').animate({opacity: 0, top: '45%'}, 200, 
+      function(){ 
+        $(this).css('display', 'none'); 
+        $('#overlay').fadeOut(400);
+      }
+    );
+});
 
 
 var heightHeader = $('.header').height();
@@ -124,7 +155,6 @@ $('.header-black').css('top', heightHeader);
 
 $( ".write-us-btn" ).click(function() {
   $( ".write-list" ).slideToggle( "slow", function() {
-    // Animation complete.
   });
 });
 
@@ -132,21 +162,11 @@ $( ".navigation-btn" ).click(function() {
   $( ".sidebar" ).slideToggle();
 });
 
+$( ".testimonial-icon:first-child" ).click(function() {
+  $( this ).parent('div').siblings('.testimonial-feedback').slideToggle();
+});
 
-function checkParams() {
-    var name = $('#name-proioma').val();
-    var phone = $('#phone-proioma').val();
-    var height = $('#height-proioma').val();
-    var width = $('#width-proioma').val();
 
-     
-    if(name.length >=1 && width.length >=1 && phone.length >=10 && height.length >=1) {
-        $('.rozrah-price-popup #submit').css('display', 'block');
-    } else {
-        $('.rozrah-price-popup #submit').css('display', 'none');
-    }
-
-}
 
     $('.slider-big-image').slick({
         slidesToShow: 1,

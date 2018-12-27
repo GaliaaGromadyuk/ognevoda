@@ -1,3 +1,8 @@
+.blog{
+	.path-page{
+		margin-bottom: 24px;
+	}
+}
 .open-blog{
 	h1{
 		margin-top: 0;
@@ -58,6 +63,10 @@
 				margin: 0;
 			}
 		}
+		&-active{
+			border-top: 1px solid #E5E5E5;
+			margin-bottom: 6rem;
+		}
 		&-name{
 			color: $title;
 		}
@@ -74,7 +83,7 @@
 		}
 		&-block{
 			padding: 2.5rem 0;
-			border-top: 1px solid #E5E5E5;
+			border-bottom: 1px solid #E5E5E5;
 		}
 		&-icon{
 			display: flex;
@@ -95,5 +104,26 @@
 			}
 		}
 	}
+	.testimonial-feedback{
+	    margin-left: 7rem;
+	    padding-top: 1rem;
+	    margin-top: 2rem;
+	    border-top: 1px solid #E5E5E5;
+	    display: none;
+		.feedback-name{
+			width: 50%;
+		}
+		textarea{
+			width: 100%;
+			padding: 1rem 2rem;
+		    border: 1px solid #C4C4C4;
+		}
+		.btn{
+			width: auto;
+			padding-left: 3rem;
+			padding-right: 3rem;
+		    margin-top: 2rem;
+		}
+	} 
 
 }
