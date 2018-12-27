@@ -321,5 +321,16 @@ $( ".testimonial-icon:first-child" ).click(function() {
           );
       });
 
+
+      $('.test-popup-link').magnificPopup({
+        delegate: 'img',
+        type:'image',
+        midClick: true,
+        gallery: {
+          enabled: true
+        }
+      });
+      
+
  });
 
