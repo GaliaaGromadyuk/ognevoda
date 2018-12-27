@@ -134,6 +134,10 @@
         border: none;
         cursor: pointer;
         margin-top: 40px;
+        transition: box-shadow .4s;
+        &:hover {
+            box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.45);
+        }
     }
     
 }
