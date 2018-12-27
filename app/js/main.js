@@ -199,13 +199,21 @@ $( ".testimonial-icon:first-child" ).click(function() {
                 slidesToScroll: 1,
                 vertical: false
             }
+          },
+          {
+            breakpoint: 500,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                vertical: false
+            }
           }
         ]
     });
 
     $('.slider-watch-also').slick({
         arrows: false,
-        // autoplay: true,        
+        autoplay: true,        
         slidesToShow: 5,
         slidesToScroll: 1,
         dots: true,
@@ -230,12 +238,19 @@ $( ".testimonial-icon:first-child" ).click(function() {
               slidesToShow: 2,
               slidesToScroll: 1
             }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
           }
         ]
     });
 
     // style select
-    $('select').styler();
+    $('select, input[type="number"]').styler();
 
     // load more goods
     $('#loadMoreGoods').click(function() {
@@ -249,6 +264,10 @@ $( ".testimonial-icon:first-child" ).click(function() {
 
     if( $("#shopInfo").length === 1 ){
         new SimpleBar(document.getElementById('shopInfo'), { autoHide: false });
+    }
+
+    if( $("#popup-body").length === 1 ){
+        new SimpleBar(document.getElementById('popup-body'), { autoHide: false });
     }
 
     // filter on page shop
@@ -283,6 +302,24 @@ $( ".testimonial-icon:first-child" ).click(function() {
         var getBlock = $(this).closest('.open-goods-desc');
         getBlock.find('#tabs-content>div[data-tab='+dataTab+']').addClass('active').siblings().removeClass('active');
     });
+
+    $('.btn-basket-open').click( function(event){
+        event.preventDefault();
+        $('#overlay').fadeIn(400,
+          function(){ 
+            $('.popup-you-basket') 
+              .css('display', 'block') 
+              .animate({opacity: 1, top: '50%'}, 200); 
+        });
+      });
+      $('.modal_close, #overlay').click( function(){
+        $('.popup-you-basket').animate({opacity: 0, top: '45%'}, 200, 
+            function(){ 
+              $(this).css('display', 'none'); 
+              $('#overlay').fadeOut(400);
+            }
+          );
+      });
 
  });
 
