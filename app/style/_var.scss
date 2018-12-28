@@ -6,11 +6,12 @@ $grey: #7A7A7A;
 $wh: #ffffff;
 $border-gray: #E5E5E5;
 $goods-card-gray: #C4C4C4;
+$color-label: #4B4A4A;
+$border-green: #5AB206;
 
 // FONTS
 $font: 'Roboto', sans-serif;
 $font-title: 'Play', sans-serif;
-
 
 //mixin
 @mixin border-radius($radius){

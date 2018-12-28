@@ -1,5 +1,7 @@
 .main.shop {
-    margin-top: 11.5rem;
+    .path-page {
+        margin-bottom: 18px;
+    }
 }
 .btn-filter {
     display: none;
@@ -200,7 +202,7 @@
         }
     }
     .goods-card__body {
-        padding: 0 24px;;
+        padding: 0 24px;
         .goods-cards__title {
             font-family: $font-title;
             font-weight: 700;
@@ -208,6 +210,16 @@
             margin: 15px 0;
             font-size: 24px;
             display: block;
+        }
+        .goods-cards__status {
+            margin-top: 8px;
+            font-weight: 500;
+            &.availability {
+                color: $border-green;
+            }
+            &.under-order {
+                color: #FDB037;
+            }
         }
         .goods-card__reviews {
             display: flex;
@@ -538,11 +550,6 @@
         }
     }
 }
-@media only screen and (max-width: 1024px) and (min-width: 768px) {
-    .main.shop {
-        margin-top: 15rem;
-    }    
-}
 
 @media only screen and (max-width: 850px) and (min-width: 768px) {
     .goods-card {
@@ -594,7 +601,9 @@
 
 @media only screen and (max-width: 767.8px) {
     .main.shop {
-        margin-top: 10.5rem;
+        .path-page {
+            margin-bottom: 14px;
+        }
     }
 
     .shop {
@@ -653,9 +662,6 @@
 }
 
 @media only screen and (max-width: 577px) {
-    .main.shop {
-        margin-top: 12rem;
-    }
     .btn-filter{
         position: static;
         margin-left: 15px;
@@ -704,9 +710,4 @@
     }
 }
 
-@media (max-height : 420px) and (orientation: landscape) {
-    .main.shop {
-        margin-top: 9.5rem;
-    }
-}
 
