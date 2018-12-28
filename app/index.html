@@ -61,11 +61,21 @@
 								    <li class="current"><a  href="#">UA</a></li>
 								    <li><a href="#">RU</a></li>
 								</ul>
+								<div id="mob-search">
+								    <form class="">
+										<input type="search" placeholder="Search">
+									</form>
+								</div>
 							</div>
 						</nav>
-						<div class="d-lg-flex d-none">
+						<div class="d-md-flex d-none align-items-center">
 							<a class="header-phone d-xl-flex d-none" href="tel:+380 050 000 00 00">+380 /050/ 000 00 00 </a>
-							<div class="language">
+							<div id="wrap">
+							    <form action="" autocomplete="off">
+							    <input id="search" name="search" type="text" placeholder="Введіть текст для пошуку"><input id="search_submit" value="Rechercher" type="submit">
+							    </form>
+							</div>
+							<div class="language d-lg-flex d-none">
 								<ul class="language__list list-style-none">
 								    <li><a class="current" href="#">UA</a></li>
 								    <li><a href="#">RU</a></li>
@@ -80,10 +90,12 @@
 <!-- FIRST SCREEN start -->
 			<section class="first-screen">
 				<div class="mob-bg"></div>
-				<img src="img/tri.svg" class="triangle" alt="">
+				
 				<div class="container">
 					<div class="row justify-content-end">
-						<div class="col-xl-4 col-lg-6">
+						<img src="img/tri.svg" class="triangle" alt="">
+						<div class="col-xl-4 col-lg-6 col-md-8 col-12  first-screen__text">
+
 							<h1>створіть свій затишок з нами</h1>
 							<p>Тут повинен бути короткий текст. Буквально декілька слів про ваші дверки. Які закликатимуть натиснути кнопку.</p>
 							<div class="first-screen__btn">
@@ -104,7 +116,7 @@
 							<h1>РОЗРАХУВАТИ вартість</h1>
 							<div class="doors-type">
 								<div class="row justify-content-between">
-									<div class="col rozrahunok-door">
+									<div class="col-md-4 col-12 rozrahunok-door">
 											<div class="rozrahunok-door__img-b">
 												<div class="rozrahunok-door__img-block">
 													<img class="rozrahunok-door__img" src="img/door1.jpg" alt="door">
@@ -117,7 +129,7 @@
 												декоративне напилення по периметру скла
 											</p>
 									</div>
-									<div class="col rozrahunok-door">
+									<div class="col-md-4 col-12 rozrahunok-door">
 											<div class="rozrahunok-door__img-b">
 												<div class="rozrahunok-door__img-block">
 													<img class="rozrahunok-door__img" src="img/door2.jpg" alt="door">
@@ -131,7 +143,7 @@
 											</p>
 
 									</div>
-									<div class="col rozrahunok-door">
+									<div class="col-md-4 col-12 rozrahunok-door">
 											<div class="rozrahunok-door__img-b">
 												<div class="rozrahunok-door__img-block">
 													<img class="rozrahunok-door__img" src="img/door3.jpg" alt="door">
@@ -158,68 +170,119 @@
 					<h2>Або вибирайте вже готові дверки зі <span>знижкою -30%</span></h2>
 					<div class="">
 						<div class="row justify-content-center slider-sale">
-							<div class="col-xl col-lg-6 col-sm-6 col-12">
-								<div class="home-sale-door">
-									<a href="#" class="home-sale__img-b"><img class="home-sale__img" src="img/sale1.jpg" alt="door sale"></a>
-									<h4 class="home-sale__name"><a href="#">Прямокутна дверка</a></h4>
-									<p class="home-sale__description">Розмір: 300х500 мм</p>
-									<div class="home-sale__footer">
-										<p class="home-sale__price">5 240 грн.</p>
-										<div class="home-sale__btn">
-											<a href="#"><img src="img/sale-arrow.png" alt="arrow"></a>
+							<div class="col-12 col-sm-6 col-xl-3">
+								<div class="goods-card">
+									<a href="open-goods.html" class="goods-card__img">
+										<img src="img/goods/window.png" alt="">
+									</a>
+									<div class="goods-card__body">
+										<a href="open-goods.html" class="goods-cards__title">Прямокутна дверка</a>
+										<span class="goods-cards__size">Розмір: 800х350 мм</span>
+										<div class="goods-card__reviews">
+											<div class="stars">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star.svg" alt="">
+											</div>
+											<a href="#">2 відгука</a>
 										</div>
+									</div>
+									<div class="goods-cards__footer">
+										<div class="goods-cards__price-discount">
+											<span>7 200 грн. </span>
+											5 999 грн.
+										</div>
+										<a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> в
+											корзину</a>
 									</div>
 								</div>
 							</div>
-							<div class="col-xl col-lg-6 col-sm-6 col-12">
-								<div class="home-sale-door">
-									<a href="#" class="home-sale__img-b"><img class="home-sale__img" src="img/sale2.jpg" alt="door sale"></a>
-									<h4 class="home-sale__name"><a href="#">Прямокутна дверка</a></h4>
-									<p class="home-sale__description">Розмір: 600х1000 мм</p>
-									<div class="home-sale__footer">
-										<p class="home-sale__price">10 000 грн.</p>
-										<div class="home-sale__btn">
-											<a href="#"><img src="img/sale-arrow.png" alt="arrow"></a>
+							<div class="col-12 col-sm-6 col-xl-3">
+								<div class="goods-card">
+									<a href="open-goods.html" class="goods-card__img">
+										<img src="img/goods/window.png" alt="">
+									</a>
+									<div class="goods-card__body">
+										<a href="open-goods.html" class="goods-cards__title">Прямокутна дверка</a>
+										<span class="goods-cards__size">Розмір: 800х350 мм</span>
+										<div class="goods-card__reviews">
+											<div class="stars">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star.svg" alt="">
+											</div>
+											<a href="#">2 відгука</a>
 										</div>
+									</div>
+									<div class="goods-cards__footer">
+										<div class="goods-cards__price-discount">
+											<span>7 200 грн. </span>
+											5 999 грн.
+										</div>
+										<a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> в
+											корзину</a>
 									</div>
 								</div>
 							</div>
-							<div class="col-xl col-lg-6 col-sm-6 col-12">
-								<div class="home-sale-door">
-									<a href="#" class="home-sale__img-b"><img class="home-sale__img" src="img/sale3.jpg" alt="door sale"></a>
-									<h4 class="home-sale__name"><a href="#">Прямокутна дверка</a></h4>
-									<p class="home-sale__description">Розмір: 700х400 мм</p>
-									<div class="home-sale__footer">
-										<p class="home-sale__price">6 000 грн.</p>
-										<div class="home-sale__btn">
-											<a href="#"><img src="img/sale-arrow.png" alt="arrow"></a>
+							<div class="col-12 col-sm-6 col-xl-3">
+								<div class="goods-card">
+									<a href="open-goods.html" class="goods-card__img">
+										<img src="img/goods/window.png" alt="">
+									</a>
+									<div class="goods-card__body">
+										<a href="open-goods.html" class="goods-cards__title">Прямокутна дверка</a>
+										<span class="goods-cards__size">Розмір: 800х350 мм</span>
+										<div class="goods-card__reviews">
+											<div class="stars">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star.svg" alt="">
+											</div>
+											<a href="#">2 відгука</a>
 										</div>
+									</div>
+									<div class="goods-cards__footer">
+										<div class="goods-cards__price-discount">
+											<span>7 200 грн. </span>
+											5 999 грн.
+										</div>
+										<a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> в
+											корзину</a>
 									</div>
 								</div>
 							</div>
-							<div class="col-xl col-lg-6 col-sm-6 col-12">
-								<div class="home-sale-door">
-									<a href="#" class="home-sale__img-b"><img class="home-sale__img" src="img/sale4.jpg" alt="door sale"></a>
-									<h4 class="home-sale__name"><a href="#">Прямокутна дверка</a></h4>
-									<p class="home-sale__description">Розмір: 350х200 мм</p>
-									<div class="home-sale__footer">
-										<p class="home-sale__price">4 200 грн.</p>
-										<div class="home-sale__btn">
-											<a href="#"><img src="img/sale-arrow.png" alt="arrow"></a>
+							<div class="col-12 col-sm-6 col-xl-3">
+								<div class="goods-card">
+									<a href="open-goods.html" class="goods-card__img">
+										<img src="img/goods/window.png" alt="">
+									</a>
+									<div class="goods-card__body">
+										<a href="open-goods.html" class="goods-cards__title">Прямокутна дверка</a>
+										<span class="goods-cards__size">Розмір: 800х350 мм</span>
+										<div class="goods-card__reviews">
+											<div class="stars">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star-green.svg" alt="">
+												<img src="img/icons/star.svg" alt="">
+											</div>
+											<a href="#">2 відгука</a>
 										</div>
 									</div>
-								</div>
-							</div>
-							<div class="col-xl col-lg-6 col-sm-6 col-12">
-								<div class="home-sale-door">
-									<a href="#" class="home-sale__img-b"><img class="home-sale__img" src="img/sale5.jpg" alt="door sale"></a>
-									<h4 class="home-sale__name"><a href="#">Прямокутна дверка</a></h4>
-									<p class="home-sale__description">Розмір: 800х350 мм</p>
-									<div class="home-sale__footer">
-										<p class="home-sale__price">7 400 грн.</p>
-										<div class="home-sale__btn">
-											<a href="#"><img src="img/sale-arrow.png" alt="arrow"></a>
+									<div class="goods-cards__footer">
+										<div class="goods-cards__price-discount">
+											<span>7 200 грн. </span>
+											5 999 грн.
 										</div>
+										<a href="#" class="goods-cards__btn"><img src="img/shopping-cart-empty-side-view.svg" alt="shopping-cart"> в
+											корзину</a>
 									</div>
 								</div>
 							</div>
@@ -449,8 +512,9 @@
 <path d="M17.9003 1.09997C17.5619 0.7616 17.015 0.7616 16.6766 1.09997L9.50001 8.2766L2.32338 1.09997C1.98501 0.7616 1.43809 0.7616 1.09972 1.09997C0.761356 1.43833 0.761356 1.98526 1.09972 2.32362L8.27636 9.50025L1.09972 16.6769C0.761356 17.0153 0.761356 17.5622 1.09972 17.9005C1.26847 18.0693 1.49001 18.1541 1.71155 18.1541C1.93309 18.1541 2.15463 18.0693 2.32338 17.9005L9.50001 10.7239L16.6766 17.9005C16.8454 18.0693 17.0669 18.1541 17.2885 18.1541C17.51 18.1541 17.7315 18.0693 17.9003 17.9005C18.2387 17.5622 18.2387 17.0153 17.9003 16.6769L10.7237 9.50025L17.9003 2.32362C18.2387 1.98526 18.2387 1.43833 17.9003 1.09997Z"/>
 </svg></span>
 					<div class="door-popup">
-						
-						<div class="row">
+						<h3 class="door-popup-title">Арочна дверка</h3>
+						<div class="row align-items-center">
+
 							<div class="col-lg-6 col-12">
 								<div class="rozrahunok-door__img-b">
 									<div class="rozrahunok-door__img-block">
@@ -460,7 +524,6 @@
 							</div>
 							<div class="col-lg-6 col-12 popup-right">
 								<div class="popup-content">
-									<h3 class="door-popup-title">Арочна дверка</h3>
 									<ul class="list-style-none">
 										<li>4 мм термостійка склокераміка, </li>
 										<li>4 мм конструкційна сталь,</li>

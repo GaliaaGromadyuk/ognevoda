@@ -58,7 +58,7 @@ $(function() {
         mobileFirst: true,
         arrows: true,
         dots: true,
-        slide: ".col-xl",
+        slide: ".col-12",
         prevArrow: ".slider-sale .slider__prev",
         nextArrow: ".slider-sale .slider__next",
         responsive: [
