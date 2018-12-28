@@ -174,6 +174,8 @@ $( ".testimonial-icon:first-child" ).click(function() {
         arrows: false,
         fade: true,
         infinite: false,
+        useTransform: true,
+        focusOnSelect: false,
         asNavFor: '.slider-nav'
     });
     $('.slider-nav').slick({
@@ -320,6 +322,47 @@ $( ".testimonial-icon:first-child" ).click(function() {
             }
           );
       });
+
+
+      $('.goods__image-big>img').magnificPopup({
+        type:'inline',
+        midClick: true,
+        items: [
+          {
+            src: '#test-popup', // CSS selector of an element on page that should be used as a popup
+            type: 'inline'
+          }
+        ],
+        callbacks: {
+          open: function() {
+            $('.slider-popup').on('init', function(event, slick) {
+            })
+            .slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: true,
+              fade: true,
+              focusOnSelect: false,
+              infinite: false
+          });
+
+          $('.slider-big-image').on('afterChange', function(event, slick, currentSlide) {
+            $('.slider-popup').slick('slickGoTo', currentSlide);
+            // var currrentNavSlideElem = '.slider-popup .slick-slide[data-slick-index="' + currentSlide + '"]';
+          });
+         
+          $('.slider-popup').on('click', '.slick-slide', function(event) {
+            event.preventDefault();
+            var goToSingleSlide = $(this).data('slick-index');
+         
+            $('.slider-big-image').slick('slickGoTo', goToSingleSlide);
+          });
+
+          }
+        }
+      });
+
+      
 
  });
 
