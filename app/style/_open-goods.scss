@@ -544,15 +544,15 @@
         .slick-next {
             position: absolute;
             bottom: 50%;
+            margin-bottom: -20px;
             z-index: 1;
             width: 35px;
-            height: 45px;
+            height: 46px;
             color: transparent;
             background: $title;
             border: none;
             background-position: center center;
             background-repeat: no-repeat;
-            
         }
         .slick-prev {
             left: -4.5vmin;
