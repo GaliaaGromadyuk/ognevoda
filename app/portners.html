@@ -49,9 +49,9 @@
 						</div>
 						<nav class="header__menu">
 							<ul class="main_menu list-style-none">
-							    <li><a href="index.html">Головна</a></li>
+							    <li class="current-menu-item"><a href="index.html">Головна</a></li>
 							    <li><a href="shop.html">магазин</a></li>
-							    <li class="current-menu-item"><a href="portners.html">партнерам</a></li>
+							    <li><a href="portners.html">партнерам</a></li>
 							    <li><a href="delivery.html">доставка</a></li>
 							    <li><a href="blog.html">блог</a></li>
 							    <li><a href="contacts.html">контакти</a></li>
@@ -61,11 +61,21 @@
 								    <li class="current"><a  href="#">UA</a></li>
 								    <li><a href="#">RU</a></li>
 								</ul>
+								<div id="mob-search">
+								    <form class="">
+										<input type="search" placeholder="Search">
+									</form>
+								</div>
 							</div>
 						</nav>
-						<div class="d-lg-flex d-none">
+						<div class="d-md-flex d-none align-items-center">
 							<a class="header-phone d-xl-flex d-none" href="tel:+380 050 000 00 00">+380 /050/ 000 00 00 </a>
-							<div class="language">
+							<div id="wrap">
+							    <form action="" autocomplete="off">
+							    <input id="search" name="search" type="text" placeholder="Введіть текст для пошуку"><input id="search_submit" value="Rechercher" type="submit">
+							    </form>
+							</div>
+							<div class="language d-lg-flex d-none">
 								<ul class="language__list list-style-none">
 								    <li><a class="current" href="#">UA</a></li>
 								    <li><a href="#">RU</a></li>
@@ -80,9 +90,10 @@
 <!-- FIRST SCREEN start -->
 			<section class="first-screen">
 				<div class="mob-bg"></div>
-				<img src="img/tri.svg" class="triangle" alt="">
+				
 				<div class="container">
 					<div class="row justify-content-end">
+						<img src="img/tri.svg" class="triangle" alt="">
 						<div class="col-xl-4 col-lg-6">
 							<h1>Співпраця для</h1>
 							<ul class="list-style-none">
@@ -100,7 +111,7 @@
 				</div>
 			</section>
 <!-- FIRST SCREEN end -->
-
+			
 <!-- COST CALCULATIONc start -->
 			<section class="rozrahunok">
 				<div class="container">
@@ -110,7 +121,7 @@
 							<h2>дверки</h2>
 							<div class="doors-type">
 								<div class="row justify-content-between">
-									<div class="col rozrahunok-door">
+									<div class="col-md-4 col-12 rozrahunok-door">
 											<div class="rozrahunok-door__img-b">
 												<div class="rozrahunok-door__img-block">
 													<img class="rozrahunok-door__img" src="img/door1.jpg" alt="door">
@@ -123,7 +134,7 @@
 												декоративне напилення по периметру скла
 											</p>
 									</div>
-									<div class="col rozrahunok-door">
+									<div class="col-md-4 col-12 rozrahunok-door">
 											<div class="rozrahunok-door__img-b">
 												<div class="rozrahunok-door__img-block">
 													<img class="rozrahunok-door__img" src="img/door2.jpg" alt="door">
@@ -137,7 +148,7 @@
 											</p>
 
 									</div>
-									<div class="col rozrahunok-door">
+									<div class="col-md-4 col-12 rozrahunok-door">
 											<div class="rozrahunok-door__img-b">
 												<div class="rozrahunok-door__img-block">
 													<img class="rozrahunok-door__img" src="img/door3.jpg" alt="door">
@@ -163,7 +174,7 @@
 							<h2>чавунні мангали</h2>
 							<div class="doors-type">
 								<div class="row justify-content-between">
-									<div class="col rozrahunok-door">
+									<div class="col-md-4 col-12 rozrahunok-door">
 											<div class="rozrahunok-door__img-b">
 												<div class="rozrahunok-door__img-block">
 													<img class="rozrahunok-door__img" src="img/parnters/azur.jpg" alt="door">
@@ -175,7 +186,7 @@
 												Метал:   вид металату
 											</p>
 									</div>
-									<div class="col rozrahunok-door">
+									<div class="col-md-4 col-12 rozrahunok-door">
 											<div class="rozrahunok-door__img-b">
 												<div class="rozrahunok-door__img-block">
 													<img class="rozrahunok-door__img" src="img/parnters/ohota.jpg" alt="door">
@@ -188,7 +199,7 @@
 											</p>
 
 									</div>
-									<div class="col rozrahunok-door">
+									<div class="col-md-4 col-12 rozrahunok-door">
 											<div class="rozrahunok-door__img-b">
 												<div class="rozrahunok-door__img-block">
 													<img class="rozrahunok-door__img" src="img/parnters/zastillia.jpg" alt="door">

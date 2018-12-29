@@ -11,8 +11,14 @@
 	} 
 	&-information{
 		width: 33rem;
+		position: absolute;
+		top: 2rem;
+		right: 7rem;
 		&__social{
 		    margin-left: 2rem;
+		    position: absolute;
+		    top: 0;
+		    right: -3.5rem;
 		    ul li{
 		    	display: block;
 		    	margin-bottom: 0.5rem;
@@ -22,6 +28,7 @@
 		&__block{
 		position: absolute;
 		right: 7rem;
+		display: flex;
 		bottom: 2rem;
 		top: 2rem;
 		width: 33rem;

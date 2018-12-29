@@ -141,7 +141,94 @@
 		top:0;
 		background: #E5E5E5
 	}
-	.rozrahunok{
+	
+	.stars{
+		display: inherit;
+	}
+	.slider-why-we > .col-12:focus {
+	    outline: none;
+	}
+	.individual{
+		background: url('../img/finished-bg2.jpg');
+		background-size: cover;
+		background-position: center;
+		padding: 2rem;
+		margin-top: 4rem;
+		text-align: center;
+		margin-bottom: 4.8rem;
+		p{
+			text-transform: uppercase;
+		}
+	}
+	.feedback{
+		margin-bottom: 5.7rem;
+		h1{
+			text-align: center;
+			margin-bottom: 8rem;
+		}
+		.slide{
+			border: 4px solid #E5E5E5;
+			padding: 2.4rem 4.2rem;
+		}
+		&-video{
+			width: 100%;
+			iframe{
+				width: 100%;
+				height: 18rem;
+			}
+		}
+		&-icon{
+			position: absolute;
+			bottom: 0;
+		    left: 50%;
+		    transform: translate(-50%, 50%);
+		}
+		&-photo{
+			display: block;
+    		margin: 0 auto;
+    		width: 100%;
+    		margin-top: 1.5rem;
+		}
+		&-right{
+			padding: 6rem;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		&-city{
+			color: $title;
+		}
+		&-time{
+			color: #C4C4C4;
+		}
+		&-footer{
+			display: flex;
+			justify-content: space-between;
+		}
+		.slider{
+			position: relative;
+		}
+		.slider-arrow{
+			color: #E5E5E5;
+			font-size: 2rem;
+			padding: 1rem;
+			&:hover{
+				color: #4B4A4A;
+			}
+		}
+		.slider__prev{
+			left: -6rem;
+			position: absolute;
+			top: 50%;
+		}
+		.slider__next{
+			right: -6rem;
+			position: absolute;
+			top: 50%;
+		}
+	}
+}
+.rozrahunok{
 		margin-bottom: 3.5rem;
 		h1{
 			text-align: center;
@@ -199,13 +286,7 @@
 			}
 		}
 	}
-	.stars{
-		display: inherit;
-	}
-	.slider-why-we > .col-12:focus {
-	    outline: none;
-	}
-	.whywe{
+.whywe{
 
 		&__title{
 			text-align: center;
@@ -314,86 +395,7 @@
             height: calc(100% + 4px);
         }
 	}
-	.individual{
-		background: url('../img/finished-bg2.jpg');
-		background-size: cover;
-		background-position: center;
-		padding: 2rem;
-		margin-top: 4rem;
-		text-align: center;
-		margin-bottom: 4.8rem;
-		p{
-			text-transform: uppercase;
-		}
-	}
-	.feedback{
-		margin-bottom: 5.7rem;
-		h1{
-			text-align: center;
-			margin-bottom: 8rem;
-		}
-		.slide{
-			border: 4px solid #E5E5E5;
-			padding: 2.4rem 4.2rem;
-		}
-		&-video{
-			width: 100%;
-			iframe{
-				width: 100%;
-				height: 18rem;
-			}
-		}
-		&-icon{
-			position: absolute;
-			bottom: 0;
-		    left: 50%;
-		    transform: translate(-50%, 50%);
-		}
-		&-photo{
-			display: block;
-    		margin: 0 auto;
-    		width: 100%;
-    		margin-top: 1.5rem;
-		}
-		&-right{
-			padding: 6rem;
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-		}
-		&-city{
-			color: $title;
-		}
-		&-time{
-			color: #C4C4C4;
-		}
-		&-footer{
-			display: flex;
-			justify-content: space-between;
-		}
-		.slider{
-			position: relative;
-		}
-		.slider-arrow{
-			color: #E5E5E5;
-			font-size: 2rem;
-			padding: 1rem;
-			&:hover{
-				color: #4B4A4A;
-			}
-		}
-		.slider__prev{
-			left: -6rem;
-			position: absolute;
-			top: 50%;
-		}
-		.slider__next{
-			right: -6rem;
-			position: absolute;
-			top: 50%;
-		}
-	}
-}
+
 .finished-door{
 	background: url('../img/finished-bg.png');
 	background-size: cover;

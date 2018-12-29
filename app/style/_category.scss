@@ -1,0 +1,22 @@
+.category{
+	&-block{
+		background: #FFFFFF;
+		text-align: center;
+		display: block;
+		padding: 4rem 0;
+		margin-bottom: 4rem;
+		img{
+			max-height: 10rem;
+		}
+	}
+	h3{
+		max-width: 16rem;
+		margin: 0 auto;
+		min-height: 3rem;
+		margin-top: 3rem;
+	}
+	.rozrahunok-door__img-b{
+		min-height: auto;
+		max-height: 11rem;
+	}
+}
