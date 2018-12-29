@@ -486,7 +486,7 @@
     }
 }
 
-
+// modal popup
 .white-popup {
     position: relative;
     background: $wh;
@@ -1149,23 +1149,37 @@
             }
         }
     }
+
+    .goods-info__title-mob {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 16px;
+    }
     
     .goods-info {
         padding: 0 10px;
+        display: flex;
+        flex-direction: column;
         &__title {
-            font-size: 20px;
-            text-align: center;
+            display: none;
+        }
+        &__status {
+            order: 1;
         }
         &__reviews {
            justify-content: center;
+           order: 0;
         }
         &__price-discount {
             text-align: center;
+            order: 1;
         }
         &__group-btn {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            order: 1;
             .btn-red {
                 width: 240px;
                 height: 54px;
@@ -1177,8 +1191,12 @@
                 height: 54px;
             }
         }
+        &__list {
+            order: 2;
+        }
         &__addition-info {
            display: inline-block;
+           order: 1;
             p {
                 display: inline;
             }

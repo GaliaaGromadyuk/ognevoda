@@ -18,15 +18,6 @@
     }
 }
 
-.subtitle-section {
-    display: block;
-    color: $main;
-    font-size: 25px;
-    font-weight: 700;
-    font-family: $font-title;
-    margin: 0 0 48px 80px;
-}
-
 .box-delivery-payment {
     width: 100%;
     text-align: center;
@@ -97,6 +88,40 @@
     padding: 80px 0 100px;
 }
 
+.accordion {
+    width: 100%;
+    margin-top: 4.4vmin;
+    li {
+        margin-bottom: 6px;
+        h2 {
+            padding-left: 32px;
+            font-size: 20px;
+            position: relative;
+            text-transform: none;
+            cursor: pointer;
+            &::before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                @include border-radius(50%);
+                background: $main;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                margin-top: -5px;
+            }
+        }
+        article {
+            display: none;
+            > p {
+                margin: 0;
+                margin-bottom: 8px;
+                padding-left: 32px;
+            }
+        }                
+    }
+}
+
 @media only screen and (max-width: 1520px) {
     .title-section {
         padding-bottom: 10px;
@@ -108,11 +133,6 @@
         > h2 {
             font-size: 26px;
         }
-    }
-    
-    .subtitle-section {
-        font-size: 22px;
-        margin: 0 0 28px 70px;
     }
     
     .box-delivery-payment {
@@ -158,6 +178,14 @@
     .return-exchange {
         padding: 60px 0;
     }
+
+    .accordion {
+        li {
+            h2 {
+                font-size: 18px;
+            }               
+        }
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -175,11 +203,6 @@
         > h2 {
             font-size: 22px;
         }
-    }
-    
-    .subtitle-section {
-        font-size: 20px;
-        margin: 0 0 22px 70px;
     }
     
     .box-delivery-payment {
@@ -239,11 +262,6 @@
         }
     }
     
-    .subtitle-section {
-        font-size: 18px;
-        margin: 0 0 20px 60px;
-    }
-    
     .box-delivery-payment {
         margin-bottom: 26px;
         .delivery-image {
@@ -268,6 +286,29 @@
         }
         > h2 {
             font-size: 18px;
+        }
+    }
+
+    .accordion {
+        width: 100%;
+        margin-top: 4.8vmin;
+        li {
+            h2 {
+                padding-left: 26px;
+                font-size: 16px;
+                &::before {
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    margin-top: -4px;
+                }
+            }
+            article {
+                > p {
+                    margin-bottom: 6px;
+                    padding-left: 26px;
+                }
+            }                
         }
     }
     

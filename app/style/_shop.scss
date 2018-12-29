@@ -6,9 +6,10 @@
 .btn-filter {
     display: none;
 }
+
 .filter {
     width: 100%;
-    height: 80.5vmin;
+    max-height: 70.5vmin;
     background-color: $wh;
     overflow: auto;
     margin-bottom: 20px;
@@ -24,6 +25,11 @@
     //     background-color: $border-gray;
     //     @include border-radius(5px);
     // }
+}
+
+.fixed {
+    position: fixed;
+    max-width: 23.43vw !important;
 }
 
 [data-simplebar] {
@@ -350,6 +356,10 @@
     .filter {
         padding: 47px 30px 0 30px;
     }
+
+    .fixed {
+        max-width: 23.1vw !important;
+    }
     
     .goods-sort {
         margin: 30px 0;
@@ -386,6 +396,10 @@
 }
 
 @media only screen and (max-width: 1400px) {
+    .fixed {
+        max-width: 22.7vw !important;
+    }
+
     .goods-card {
         .goods-card__img {
             width: 100%;
@@ -434,6 +448,10 @@
 }
 
 @media only screen and (max-width: 1200px) {
+    .fixed {
+        max-width: 22.5vw !important;
+    }
+
     .filter {
         padding: 28px 20px 0 20px;
     }
@@ -511,6 +529,10 @@
 }
 
 @media only screen and (max-width: 1150px) and (min-width: 992px) {
+
+    .fixed {
+        max-width: 22.07vw !important;
+    }
     .goods-card {
         .goods-card__body {
             .goods-card__reviews {
@@ -551,7 +573,17 @@
     }
 }
 
+@media only screen and (max-width: 991.8px) {
+    .fixed {
+        max-width: 30.24vw !important;
+    }
+}
+
 @media only screen and (max-width: 850px) and (min-width: 768px) {
+
+    .fixed {
+        max-width: 29.3vw !important;
+    }
     .goods-card {
         .goods-card__img {
             height: 180px;
@@ -615,7 +647,7 @@
         top: 0;
         left: 15px;
         z-index: 100;
-        height: 100vh;
+        max-height: 100vh;
         width: 360px;
         transform: translateX(-110%);
         transition: 0.5s ease;
@@ -707,5 +739,11 @@
     .shop-info {
         height: 125px;
         line-height: 24px;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    .fixed {
+        max-width: 450px !important;
     }
 }
