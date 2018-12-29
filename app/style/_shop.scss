@@ -741,3 +741,9 @@
         line-height: 24px;
     }
 }
+
+@media only screen and (min-width: 1920px) {
+    .fixed {
+        max-width: 450px !important;
+    }
+}
