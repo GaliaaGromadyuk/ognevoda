@@ -7,6 +7,7 @@ $(window).scroll(function() {
     }
 });
 
+
 function checkParams() {
     var name = $('#name-proioma').val();
     var phone = $('#phone-proioma').val();
@@ -361,8 +362,10 @@ $( ".testimonial-icon:first-child" ).click(function() {
           }
         }
       });
-
       
 
  });
+      $('.feedback-photo').magnificPopup({
+          type: 'image'
+        });
 

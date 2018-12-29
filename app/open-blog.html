@@ -48,11 +48,11 @@
 						</div>
 						<nav class="header__menu">
 							<ul class="main_menu list-style-none">
-							    <li><a href="index.html">Головна</a></li>
+							    <li class="current-menu-item"><a href="index.html">Головна</a></li>
 							    <li><a href="shop.html">магазин</a></li>
 							    <li><a href="portners.html">партнерам</a></li>
 							    <li><a href="delivery.html">доставка</a></li>
-							    <li class="current-menu-item"><a href="blog.html">блог</a></li>
+							    <li><a href="blog.html">блог</a></li>
 							    <li><a href="contacts.html">контакти</a></li>
 							</ul>
 							<div class="language-mobile d-md-none d-flex">
@@ -60,11 +60,21 @@
 								    <li class="current"><a  href="#">UA</a></li>
 								    <li><a href="#">RU</a></li>
 								</ul>
+								<div id="mob-search">
+								    <form class="">
+										<input type="search" placeholder="Search">
+									</form>
+								</div>
 							</div>
 						</nav>
-						<div class="d-lg-flex d-none">
+						<div class="d-md-flex d-none align-items-center">
 							<a class="header-phone d-xl-flex d-none" href="tel:+380 050 000 00 00">+380 /050/ 000 00 00 </a>
-							<div class="language">
+							<div id="wrap">
+							    <form action="" autocomplete="off">
+							    <input id="search" name="search" type="text" placeholder="Введіть текст для пошуку"><input id="search_submit" value="Rechercher" type="submit">
+							    </form>
+							</div>
+							<div class="language d-lg-flex d-none">
 								<ul class="language__list list-style-none">
 								    <li><a class="current" href="#">UA</a></li>
 								    <li><a href="#">RU</a></li>
@@ -136,7 +146,7 @@
 	                    <div class="path-page">
 							<a href="index.html"><img src="img/icons/home.svg" alt="" title="">Головна</a>
 	                        <a href="shop.html">Блог</a>
-	                        <span>10 грудня 2018</span>
+	                        <span>Каміни в стилях</span>
 	                    </div>
 	                </div>
 	            </div>

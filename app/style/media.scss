@@ -13,6 +13,32 @@
 	}
 }
 
+@media (max-width: 1400px){
+		.partners-popup{
+			.rozrah-price{
+			    padding: 3.888rem 4rem 7rem 4rem;
+			}
+		}
+			.header{
+		padding: 0.5rem 0;
+	}
+	.header-black{
+		padding: 0.75rem 0;
+		margin-top: 1rem;
+	}
+	.header-cart__icon:after{
+		height: 150%;
+	    bottom: -25%;
+	}
+	.main {
+	    margin-top: 11rem;
+	}
+	.blog .page-title {
+	    margin-bottom: 1.5rem;
+	    margin-top: 0rem;
+	}
+}
+
 @media (max-width : 1300px)   {
 	.home{
 		.feedback-right{
@@ -47,10 +73,7 @@
 		 .feedback .slide{
 		 	padding: 2.5rem 1.5rem;
 		 }
-		.whywe-block-block {
-		    padding: 2rem;
-		    min-height: 17rem;
-		}
+
 		.feedback .slider__next{
 			right: -3rem;
 		}
@@ -65,6 +88,10 @@
 			margin: 1rem 0;
 			font-size: 2rem;
 		}
+	}		
+	.whywe-block-block {
+	    padding: 2rem;
+	    min-height: 17rem;
 	}
 	.rozrah-price{
 		padding: 3rem;
@@ -73,21 +100,28 @@
 	    	margin-bottom: 1rem;
 	    }
 	}
+	.rozrah-price-popup{
+		overflow-y: auto;
+	}
 	.doors-type-popup{
 		padding: 0;
 		width: 95%;
 		padding-bottom: 2.5rem;
-
+		overflow-y: auto;
 	}
 	.partners-popup{
+		overflow-y: auto;
 	    input{
 	    	margin-bottom: 1rem;
 	    }
 	}
-	.partners-popup .rozrah-price{
-		padding: 1rem;
-	    padding-top: 3rem;
-	}
+	.partners-popup{
+		overflow-y: auto;
+		.rozrah-price{
+			padding: 3rem;
+		    padding-top: 3rem;
+		}
+	} 
 	.contacts{
 		&-information{
 			margin-top: 2rem;
@@ -160,6 +194,23 @@
         margin-top: 3rem;
 	}    
 }
+
+@media (max-width: 768px){
+	.partners .first-screen .triangle{
+	    left: 0;
+	    right: auto;
+	    transform: rotate(180deg);
+	    top: 20%;
+	}
+	.doors-type-popup ul li{
+		margin-right: 0;
+	}
+	.whywe-block-block{
+		    min-height: 16rem;
+		    padding: 2rem;
+	}
+}
+
 @media (max-width : 767px)   {
 	html{
 		font-size: 15px;
@@ -310,29 +361,31 @@
 				width: auto;
 			}
 		}
-		.rozrahunok{
-			margin-bottom: 1.9rem;
-
+		.individual{
+			margin-top: 2rem;
+		    margin-bottom: 2rem;
+		}
+		.feedback{
+			margin-bottom: 2rem;
+			.slider-arrow{
+				display: none !important;
+			}
+			&-right{
+				padding: 1rem;
+			}
+			 .slide{
+			 	padding: 2rem;
+			 	border: none;
+			 }
+			&-video iframe {
+			    height: 10rem;
+			}
 			h1{
-				font-size: 1.333rem;
-				margin-top: 1rem;
-				margin-bottom: 1.5rem;
-			}
-			.doors-type{
-				margin: 1.4rem;
-			}
-			&-door__img {
-			    &-b{
-		    	    min-height: auto;
-	    	        margin-top: 0rem;
-			    }
-			}
-			&-door{
-			    padding: 0 1.6rem;
-				padding-bottom: 2rem;
+				margin-bottom: 2rem;
 			}
 		}
-		.doors-type-popup ul li{
+	}
+	.doors-type-popup ul li{
 			margin-right: 0;
 		}
 		.doors-type-popup .door-popup{
@@ -358,74 +411,72 @@
 			z-index: 3;
 			background: #E5E5E5
 		} 
-		.whywe .whywe-block::after{
-			display: none;
-		}
-		.whywe .whywe-block::before{
-			display: none;
-		}
-		.whywe .whywe-block-block::before{
-			display: none;
-		}
-		.whywe .whywe-block-block::after{
-			display: none;
-		}
-		.finished-door__name{
-			text-transform: uppercase;
-		}
-		.whywe__subtitle{
-			
-			margin-top: 1.5rem;
-		}
+	.rozrahunok{
+			margin-bottom: 1.9rem;
 
-		.whywe-block__name{
-		    margin-top: -2.3rem;
-		    background: #F8F8F8;
-		    padding: 0rem 1rem;
-		    white-space: nowrap;
-		    padding-left: 1.5rem;
-		}
-		.whywe-block-block {
-		    padding: 0 1.65rem;
-		    padding-bottom: 2rem;
-		    padding-top: 1.5rem;
-	        min-height: 16rem;
-		}
-		.whywe-block__img{
-			opacity: 1;
-			left: -1.3rem;
-		    padding-left: 1rem;
-		}
-		.whywe-block__icon{
-			max-width: 2.25rem;
-		}
-		.slider-why-we{
-			.slick-dots {
-			    bottom: 0;
-			}
-		}
-		.individual{
-			margin-top: 2rem;
-		    margin-bottom: 2rem;
-		}
-		.feedback{
-			margin-bottom: 2rem;
-			.slider-arrow{
-				display: none !important;
-			}
-			&-right{
-				padding: 1rem;
-			}
-			 .slide{
-			 	padding: 2rem;
-			 	border: none;
-			 }
-			&-video iframe {
-			    height: 10rem;
-			}
 			h1{
-				margin-bottom: 2rem;
+				font-size: 1.333rem;
+				margin-top: 1rem;
+				margin-bottom: 1.5rem;
 			}
+			.doors-type{
+				margin: 1.4rem;
+			}
+			&-door__img {
+			    &-b{
+		    	    min-height: auto;
+	    	        margin-top: 0rem;
+			    }
+			}
+			&-door{
+			    padding: 0 1.6rem;
+				padding-bottom: 2rem;
+			}
+		}
+	.whywe .whywe-block::after{
+		display: none;
+	}
+	.whywe .whywe-block::before{
+		display: none;
+	}
+	.whywe .whywe-block-block::before{
+		display: none;
+	}
+	.whywe .whywe-block-block::after{
+		display: none;
+	}
+	.finished-door__name{
+		text-transform: uppercase;
+	}
+	.whywe__subtitle{
+		
+		margin-top: 1.5rem;
+	}
+
+	.whywe-block__name{
+	    margin-top: -2.3rem;
+	    background: #F8F8F8;
+	    padding: 0rem 1rem;
+	    white-space: nowrap;
+	    padding-left: 1.5rem;
+	}
+	.whywe-block-block {
+	    padding: 0 1.65rem;
+	    padding-bottom: 2rem;
+	    padding-top: 1.5rem;
+        min-height: 10rem;
+	}
+	.whywe-block__img{
+		opacity: 1;
+		left: -1.3rem;
+	    padding-left: 1rem;
+	}
+	.whywe-block__icon{
+		max-width: 2.25rem;
+	}
+	.slider-why-we{
+		.slick-dots {
+		    bottom: 0;
 		}
 	}
 	.slider-sale .slick-arrow{
@@ -448,6 +499,7 @@
 		&-information{
 			display: flex;
 			flex-direction: column;
+			margin-top: 5rem;
 			&-top{
 				width: 100%;
 			}
@@ -456,6 +508,20 @@
 			}
 			.work-hours{
 				margin-top: 0rem;
+			}
+			&__social{
+				margin-top: -3rem;
+				margin-left: 0;
+			    left: 50%;
+			    width: auto;
+			    transform: translateX(-50%);
+			    ul{
+			    	display: flex;
+				    justify-content: center;
+				    li{
+				    	margin-right: 0.5rem;
+				    }
+			    }
 			}
 		}
 		#map iframe {
@@ -523,6 +589,9 @@
 				margin-right: 0.5rem;
 			}
 		}
+	}
+	.partners .first-screen .triangle{
+	    top: 40%;
 	}
 	.contacts-information .work-hours:after{
 		display: none;
