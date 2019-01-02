@@ -36,6 +36,14 @@
 			}
 		}
 	}
+	.goods-card .goods-cards__footer .goods-cards__price-discount{
+		padding-left: 0.5rem;
+	    padding-right: 0.5rem;
+	    white-space: nowrap;
+	}
+	.goods-card .goods-card__body{
+		padding: 0 0.5rem;
+	}
 	&-sale{
 		.col-12{
 			margin-bottom: 1rem;

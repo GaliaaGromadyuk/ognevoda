@@ -31,7 +31,7 @@
 	    bottom: -25%;
 	}
 	.main {
-	    margin-top: 11rem;
+	    margin-top: 10rem;
 	}
 	.blog .page-title {
 	    margin-bottom: 1.5rem;
@@ -206,8 +206,24 @@
 		margin-right: 0;
 	}
 	.whywe-block-block{
-		    min-height: 16rem;
+		    min-height: 17.5rem;
 		    padding: 2rem;
+	}
+	.blog .navigation-btn{
+		display: block;
+	}
+		.blog 	.content{
+		margin-top: 1.5rem;
+	}
+		.sidebar{
+		display: none;
+	}
+	.contacts-information__social {
+	    margin-left: 1rem;
+	    right: -2rem;
+	}
+	.rozrahunok-door__img{
+		max-height: 12rem;
 	}
 }
 
@@ -486,15 +502,6 @@
 		width: 7rem;
 		height: 3rem;
 	}
-	.sidebar{
-		display: none;
-	}
-	.blog .navigation-btn{
-		display: block;
-	}
-	.blog 	.content{
-		margin-top: 1.5rem;
-	}
 	.contacts{
 		&-information{
 			display: flex;
@@ -510,7 +517,7 @@
 				margin-top: 0rem;
 			}
 			&__social{
-				margin-top: -3rem;
+				margin-top: 0;
 				margin-left: 0;
 			    left: 50%;
 			    width: auto;
@@ -526,7 +533,11 @@
 		}
 		#map iframe {
 		    height: 400px;
+		        margin-top: 5rem;
 		}
+	}
+	.footer .language-footer .language__list{
+		justify-content: center;
 	}
 	.footer{
 		text-align: center;
@@ -540,6 +551,9 @@
 @media (max-width : 576px)   {
 	h1{
 		font-size: 1.8rem;
+	}
+	.basket-delivery .your-delivery__img{
+		width: 85%;
 	}
 	.home{
 		.first-screen{

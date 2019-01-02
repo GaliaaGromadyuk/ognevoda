@@ -8,6 +8,9 @@
 			height: 700px;
 		}
 		position: relative;
+		> .row{
+			min-width: 100%;
+		}
 	} 
 	&-information{
 		width: 33rem;
@@ -153,6 +156,13 @@
 			&__block{
 				min-height: 15rem;
 			}
+		}
+	}
+	.about-company{
+		h1{
+			text-align: center;
+		    margin-top: 4.75rem;
+		    margin-bottom: 3rem;
 		}
 	}
 }

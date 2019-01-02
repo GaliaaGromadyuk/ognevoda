@@ -7,7 +7,6 @@ $(window).scroll(function() {
     }
 });
 
-
 function checkParams() {
     var name = $('#name-proioma').val();
     var phone = $('#phone-proioma').val();
@@ -22,7 +21,6 @@ function checkParams() {
     }
 
 }
-
 jQuery(document).ready(function($) {
 	$('.whywe-block').mouseenter(function() {
 		$(this).children(".whywe-block__img").css('opacity', '1');
@@ -40,6 +38,26 @@ jQuery(document).ready(function($) {
       $('.header-logo svg path:last-child').css('fill', '#E51010');
     }
   });
+
+    // basket select
+    $('#wayDelivery').on('change', function(){
+      switch($('#wayDelivery option:selected').val()) {
+          case "samovuviz": 
+          $('.basket__form-city').css('display', 'none') ;
+          $('.basket__form-address').css('display', 'none') ;
+          $('.basket__form-viddil').css('display', 'none') ;
+          break;
+          case "new posta": 
+          $('.basket__form-city').css('display', 'block') ;
+          $('.basket__form-address').css('display', 'none') ;
+          $('.basket__form-viddil').css('display', 'block') ;
+          break;
+          case "address": 
+          $('.basket__form-city').css('display', 'block') ;
+          $('.basket__form-address').css('display', 'block') ;
+          $('.basket__form-viddil').css('display', 'none') ;
+      }
+    });
 
 $('.slider').slick({
   dots: false,
@@ -321,6 +339,7 @@ $( ".testimonial-icon:first-child" ).click(function() {
             }
           );
     });
+
 
      //accordion 
      $('.accordion>li>h2').click(function () {

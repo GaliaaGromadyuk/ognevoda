@@ -5,7 +5,9 @@
         margin-bottom: 33px;
     }
 }
-
+    .basket__form-viddil, .basket__form-address, .basket__form-city{
+        display: none;
+    }
 .basket__form {
     &_title {
         margin-top: 0;
@@ -20,15 +22,15 @@
             color: $color-label;
             display: block;
             margin-bottom: 8px;
-            font-size: 18px;
+            font-size: 16px;
         }
         > input {
             margin: 0;
-            padding: 0 30px;
+            padding: 0 15px;
             background: transparent;
-            height: 55px;
+            height: 40px;
             border: 1px solid $border-gray;
-            font-size: 18px;
+            font-size: 16px;
             &:focus {
                 outline: none;
             }
@@ -37,9 +39,9 @@
             width: 100%;
         }
         .jq-selectbox__select {
-            height: 55px;
+            height: 40px;
             width: 100%;
-            padding: 0 45px 0 30px;
+            padding: 0 15px 0 15px;
             border: 1px solid #CCC;
             background: transparent;
             border: 1px solid $border-gray;
@@ -47,7 +49,7 @@
             @include border-radius(0);
             box-shadow: none;
             color: $title;
-            font: 18px/55px $font;
+            font: 16px/40px $font;
             text-shadow: none;
             .jq-selectbox__trigger {
                 height: 100%;
