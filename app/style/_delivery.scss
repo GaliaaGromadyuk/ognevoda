@@ -280,6 +280,24 @@
     
 }
 
+@media only screen and (max-width: 767.8px) {
+   .delivery{
+    .box-delivery-payment {
+        display: flex;
+        flex-direction: column;
+        .delivery-image {
+            height: auto;
+            width: 90%;
+        }
+        h3 {
+            order: -1;
+            font-size: 20px;
+            margin-bottom: 18px;
+        }
+        }
+    }
+}
+
 @media only screen and (max-width: 577px) {
     .title-section {
         margin-bottom: 10px;
