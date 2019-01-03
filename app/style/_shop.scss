@@ -13,7 +13,7 @@
 
 .filter {
     width: 100%;
-    max-height: 70.5vmin;
+    height: 70.5vmin;
     background-color: $wh;
     overflow: auto;
     margin-bottom: 20px;
@@ -34,6 +34,7 @@
 .fixed {
     position: fixed;
     max-width: 23.43vw !important;
+    height: 75vh;
 }
 
 [data-simplebar] {
@@ -664,7 +665,7 @@
         top: 0;
         left: 15px;
         z-index: 100;
-        max-height: 100vh;
+        height: 100vh !important;
         width: 80%;
         transform: translateX(-110%);
         transition: 0.5s ease;
